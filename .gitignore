@@ -1,0 +1,5 @@
+*.bck
+*pcb-bak
+*-cache.lib
+*sch-bak
+fp-info-cache
