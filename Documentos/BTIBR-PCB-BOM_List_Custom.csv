@@ -1,0 +1,25 @@
+Id;Designador;Pacote;Quantidade;Designação
+13;C11,C9,C2,C3,C14,C15;CP_Radial_D5.0mm_P2.00mm;6;1uF
+14;C12,C4,C16;C_Disc_D5.0mm_W2.5mm_P5.00mm;3;10nF
+15;C5,C1,C13;CP_Radial_D6.3mm_P2.50mm;3;100 uF
+16;C6,C7,C8,C10;CP_Radial_D5.0mm_P2.00mm;4;10uF
+17;D1,D2,D3,D4,D5,D6;LED_D5.0mm;6;LED
+19;J15;PinHeader_1x07_P2.54mm_Vertical;1;Conn_01x07_Male
+23;J5,J11;PinHeader_1x03_P2.54mm_Vertical;2;Conn_01x03_Male
+21;J6,J10,J12,J16,J1;Connector_Screw_3pin;5;Screw_Terminal_01x03
+18;J7,J2;PinHeader_1x04_P2.54mm_Vertical;2;Conn_01x04_Male
+24;J8,J13,J3;PinHeader_1x09_P2.54mm_Vertical;3;Conn_01x09_Male
+12;J9,J4,J14;Connector_Screw_4pin;3;Screw_Terminal_01x04
+10;R10,R4,R18;R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;3;100k
+9;R11,R5,R20;R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;3;2k7
+6;R12,R6,R21;R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;3;47
+20;R14,R17,R19,R22,R23,R24;R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;6;1k
+4;R7,R1,R13;R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;3;220
+5;R8,R2,R15;R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;3;5k6
+7;R9,R3,R16;R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal;3;10k
+3;RV2,RV1,RV3;Pot_3386F_Vertical;3;20k
+2;U11,U2,U7;Module_X9C103S;3;Module_X9C103S
+1;U13,U9,U4;Module_DRV8825;3;DRV8825
+22;U5;Module_LM2596;1;Module_LM2596
+8;U6,U1,U10;DIP-4_W7.62mm;3;PC817
+11;U8,U3,U12;DIP-8_W7.62mm;3;IC_LM331
