@@ -6,7 +6,7 @@ x = minV = 0.05     # Tensão mínima
 points = 100        # Quantidade de pontos de visualização
 
 # Resistores e Capacitores
-Rs = 12500
+Rs = 8400
 Rl = 100000
 Rt = 5600
 Ct = 0.00000001
@@ -34,5 +34,5 @@ for i in range(points + 1):
 
 plt.plot(volts, freq, 'ro')
 plt.xlabel('Tensão [V]')
-plt.ylabel('Frequência [kHz]')
+plt.ylabel('Frequência [Hz]')
 plt.show()
