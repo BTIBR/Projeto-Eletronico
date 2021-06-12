@@ -27,12 +27,12 @@ for i in range(points + 1):
     volts.append(x)
     freq.append(f)
 
-    with open('output', 'a') as file:
-        file.write(('%.5f' % (x)) + '\t\t' + ('%.5f' % (f)) + '\n')
+    #with open('output', 'a') as file:
+    #    file.write(('%.5f' % (x)) + '\t\t' + ('%.5f' % (f)) + '\n')
 
     x += (maxV-minV)/points
 
-plt.plot(volts, freq, 'ro')
+plt.plot(volts, freq, 'r')
 plt.xlabel('Tensão [V]')
 plt.ylabel('Frequência [Hz]')
 plt.show()
