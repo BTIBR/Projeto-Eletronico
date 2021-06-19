@@ -1087,7 +1087,7 @@ Wire Wire Line
 	11150 3400 11000 3400
 Connection ~ 11000 3400
 Text Notes 11200 3050 0    39   ~ 0
-8k4 - 42%
+2k8
 $Comp
 L power:GND #PWR013
 U 1 1 60D874FB
@@ -1449,7 +1449,7 @@ Wire Wire Line
 	11150 6250 11000 6250
 Connection ~ 11000 6250
 Text Notes 11200 5900 0    39   ~ 0
-8k4 - 42%
+2k8
 $Comp
 L power:GND #PWR017
 U 1 1 617ED135
@@ -1752,7 +1752,7 @@ Wire Wire Line
 	11150 9150 11000 9150
 Connection ~ 11000 9150
 Text Notes 11200 8800 0    39   ~ 0
-8k4 - 42%
+2k8
 $Comp
 L power:GND #PWR022
 U 1 1 61810A1F
