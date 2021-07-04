@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "Bancada de Testes Integrada com Braço Robótico"
 Date "2021-03-23"
 Rev "2.0"
