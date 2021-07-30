@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 6
+Sheet 5 7
 Title "Bancada de Testes Integrada com Braço Robótico"
 Date "2021-07-30"
 Rev "3.0"
@@ -6616,14 +6616,14 @@ Wire Notes Line
 	7770 5355 7770 2300
 Wire Notes Line
 	7770 2300 4175 2300
-Text HLabel 7770 2940 2    118  Output ~ 0
-12V_ARDUINO
-Text HLabel 7770 3510 2    118  Output ~ 0
-12V_PCB
+Text HLabel 7770 2910 2    118  Output ~ 0
+12V-FONTE-1
+Text HLabel 7770 3495 2    118  Output ~ 0
+5V-FONTE-1
 Text HLabel 7770 4095 2    118  Output ~ 0
-5V_ROBÔ
-Text HLabel 7770 4695 2    118  Output ~ 0
-GND_FONTE
-Text HLabel 4175 3945 0    118  Input ~ 0
-ALIMENTAÇÃO_REDE
+0V-FONTE-1
+Text HLabel 4125 3845 0    118  Input ~ 0
+ALIMENTAÇÃO-REDE
+Text HLabel 7770 4700 2    118  Output ~ 0
+PE-FONTE-1
 $EndSCHEMATC
