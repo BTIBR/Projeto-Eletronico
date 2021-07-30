@@ -3,514 +3,661 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 2 7
-Title "BTIBR - Unidade Central de Processamento"
-Date "2021-03-23"
-Rev "2.0"
+Sheet 2 6
+Title "Bancada de Testes Integrada com Braço Robótico"
+Date "2021-07-30"
+Rev "3.0"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
-Comment3 "Bruno Rafael Pires de Camargo"
-Comment4 ""
+Comment3 "Lucas Melaré"
+Comment4 "Bruno Rafael Pires de Camargo"
 $EndDescr
-Wire Wire Line
-	8400 4520 8400 4655
-$Comp
-L Device:LED D?
-U 1 1 604100F8
-P 8180 4520
-AR Path="/60444F3A/604100F8" Ref="D?"  Part="1" 
-AR Path="/6045294F/604100F8" Ref="D?"  Part="1" 
-AR Path="/604100F8" Ref="D?"  Part="1" 
-AR Path="/60407144/604100F8" Ref="D?"  Part="1" 
-AR Path="/60528CB7/604100F8" Ref="D1"  Part="1" 
-AR Path="/60529163/604100F8" Ref="D?"  Part="1" 
-F 0 "D1" H 8180 4640 50  0000 C CNN
-F 1 "LED" H 8173 4356 50  0001 C CNN
-F 2 "LED_THT:LED_D5.0mm" H 8180 4520 50  0001 C CNN
-F 3 "~" H 8180 4520 50  0001 C CNN
-	1    8180 4520
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8400 4520 8330 4520
-$Comp
-L power:GND #PWR?
-U 1 1 60410105
-P 8400 4655
-AR Path="/60444F3A/60410105" Ref="#PWR?"  Part="1" 
-AR Path="/6045294F/60410105" Ref="#PWR?"  Part="1" 
-AR Path="/60410105" Ref="#PWR?"  Part="1" 
-AR Path="/60407144/60410105" Ref="#PWR?"  Part="1" 
-AR Path="/60528CB7/60410105" Ref="#PWR03"  Part="1" 
-AR Path="/60529163/60410105" Ref="#PWR?"  Part="1" 
-F 0 "#PWR03" H 8400 4405 50  0001 C CNN
-F 1 "GND" H 8400 4500 50  0000 C CNN
-F 2 "" H 8400 4655 50  0001 C CNN
-F 3 "" H 8400 4655 50  0001 C CNN
-	1    8400 4655
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_DPDT_x2 SW?
-U 1 1 6041010B
-P 7175 4620
-AR Path="/60444F3A/6041010B" Ref="SW?"  Part="1" 
-AR Path="/6045294F/6041010B" Ref="SW?"  Part="1" 
-AR Path="/6041010B" Ref="SW?"  Part="1" 
-AR Path="/60407144/6041010B" Ref="SW?"  Part="1" 
-AR Path="/60528CB7/6041010B" Ref="SW1"  Part="1" 
-AR Path="/60529163/6041010B" Ref="SW?"  Part="1" 
-F 0 "SW1" H 7175 4813 50  0000 C CNN
-F 1 "SW_DPDT_x2" H 7175 4814 50  0001 C CNN
-F 2 "" H 7175 4620 50  0001 C CNN
-F 3 "~" H 7175 4620 50  0001 C CNN
-	1    7175 4620
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7375 4520 7507 4520
-NoConn ~ 7375 4720
-Text Notes 7750 7715 0    79   ~ 0
-Controle remoto de PS2
-Text Notes 6935 4105 0    79   ~ 0
-Seleção controle Local/Remoto
-Wire Wire Line
-	4865 5720 5240 5720
-Wire Wire Line
-	4865 5920 5605 5920
-Wire Wire Line
-	4865 6020 5605 6020
-Wire Wire Line
-	4865 6120 5605 6120
-Wire Wire Line
-	4865 6220 5605 6220
-Wire Wire Line
-	4865 6320 5605 6320
-Wire Wire Line
-	4865 6420 5605 6420
-Wire Wire Line
-	4865 6520 5605 6520
-Wire Wire Line
-	4865 6620 5605 6620
-Wire Wire Line
-	4865 6720 5605 6720
-Wire Wire Line
-	4865 6820 5605 6820
-Wire Wire Line
-	4865 6920 5605 6920
-Wire Wire Line
-	4865 7020 5605 7020
-Wire Wire Line
-	4865 7120 5605 7120
-Wire Wire Line
-	4865 7220 5605 7220
-Wire Wire Line
-	4865 7320 5605 7320
-Wire Wire Line
-	4865 7420 5605 7420
-Wire Wire Line
-	4865 7520 5605 7520
-Wire Wire Line
-	4865 7620 5605 7620
-Wire Wire Line
-	4865 7720 5605 7720
-Wire Wire Line
-	4865 7820 5605 7820
-Wire Wire Line
-	4865 7920 5605 7920
-Wire Wire Line
-	4865 8020 5605 8020
-Wire Wire Line
-	4865 8120 5605 8120
-Wire Wire Line
-	4865 8220 5605 8220
-Wire Wire Line
-	4865 8320 5605 8320
-Wire Wire Line
-	4865 8420 5605 8420
-Wire Wire Line
-	4865 8520 5605 8520
-Wire Wire Line
-	4865 8620 5605 8620
-Wire Wire Line
-	4865 8720 5605 8720
-Wire Wire Line
-	4865 8820 5605 8820
-Wire Wire Line
-	4865 8920 5605 8920
-Wire Wire Line
-	4865 9020 5605 9020
-Wire Wire Line
-	4865 9120 5605 9120
-Wire Wire Line
-	4865 9320 5605 9320
-Wire Wire Line
-	4865 9420 5605 9420
-Wire Wire Line
-	4865 9620 5605 9620
-Wire Wire Line
-	4865 9720 5605 9720
-Wire Wire Line
-	4865 9820 5605 9820
-Wire Wire Line
-	4865 9920 5605 9920
-Wire Wire Line
-	4750 4775 5240 4775
-Wire Wire Line
-	5240 4775 5240 5720
-Connection ~ 5240 5720
-Wire Wire Line
-	5240 5720 5605 5720
-Wire Wire Line
-	4750 4285 5065 4285
-Wire Wire Line
-	5065 5620 4865 5620
-Wire Wire Line
-	5065 4285 5065 5620
-Wire Wire Line
-	4750 4520 5405 4520
-Wire Wire Line
-	5405 4520 5405 5620
-Wire Wire Line
-	5405 5620 5605 5620
-Wire Wire Line
-	7807 4520 7965 4520
-Wire Wire Line
-	5580 4620 5580 4050
-Wire Wire Line
-	5580 4050 4750 4050
-Wire Wire Line
-	5580 4620 6975 4620
-Wire Wire Line
-	7505 5620 7965 5620
-Wire Wire Line
-	7965 5620 7965 4520
-Connection ~ 7965 4520
-Wire Wire Line
-	7965 4520 8030 4520
-Wire Wire Line
-	7505 8205 8245 8205
-Wire Wire Line
-	7505 8305 8245 8305
-Wire Wire Line
-	7505 8605 7736 8605
-Wire Wire Line
-	7505 8705 8245 8705
-Wire Wire Line
-	7505 8805 8245 8805
-Wire Wire Line
-	7505 9005 8245 9005
-NoConn ~ 8245 8405
-NoConn ~ 8245 9105
-NoConn ~ 8245 9205
-Text HLabel 2600 6520 0    50   Input ~ 0
+Text HLabel 2850 6120 0    50   Input ~ 0
 M2_FDC+
-Text HLabel 2600 6420 0    50   Input ~ 0
+Text HLabel 2850 6020 0    50   Input ~ 0
 M1_FDC-
-Text HLabel 2600 6320 0    50   Input ~ 0
+Text HLabel 2850 5920 0    50   Input ~ 0
 M1_FDC+
-Text HLabel 2600 6620 0    50   Input ~ 0
+Text HLabel 2850 6220 0    50   Input ~ 0
 M2_FDC-
-Text HLabel 2600 6820 0    50   Input ~ 0
+Text HLabel 2850 6420 0    50   Input ~ 0
 M3_FDC-
-Text HLabel 2600 6720 0    50   Input ~ 0
+Text HLabel 2850 6320 0    50   Input ~ 0
 M3_FDC+
-Text HLabel 7741 6870 2    50   Input ~ 0
-A-5V3
-Text HLabel 7882 9518 2    50   Input ~ 0
-A-GND6
-Text HLabel 7741 6220 2    50   Input ~ 0
-A-D20
-Text HLabel 7741 6320 2    50   Input ~ 0
-A-D21
-Text HLabel 2600 5720 0    50   Input ~ 0
+Text HLabel 2850 5320 0    50   Input ~ 0
 POT1-SIN
-Text HLabel 2600 5620 0    50   Input ~ 0
+Text HLabel 2850 5220 0    50   Input ~ 0
 POT1-VCC
-Text HLabel 2600 5920 0    50   Input ~ 0
+Text HLabel 2850 5520 0    50   Input ~ 0
 POT2-VCC
-Text HLabel 2600 5820 0    50   Input ~ 0
+Text HLabel 2850 5420 0    50   Input ~ 0
 POT1-GND
-Text HLabel 2600 6120 0    50   Input ~ 0
+Text HLabel 2850 5720 0    50   Input ~ 0
 POT2-GND
-Text HLabel 2600 6020 0    50   Input ~ 0
+Text HLabel 2850 5620 0    50   Input ~ 0
 POT2-SIN
-Text HLabel 2600 7020 0    50   Input ~ 0
+Text HLabel 3850 6620 0    50   Input ~ 0
 M1-A1
-Text HLabel 2600 7120 0    50   Input ~ 0
+Text HLabel 3850 6720 0    50   Input ~ 0
 M1-A2
-Text HLabel 2600 7220 0    50   Input ~ 0
+Text HLabel 3850 6820 0    50   Input ~ 0
 M1-B1
-Text HLabel 2600 7320 0    50   Input ~ 0
+Text HLabel 3850 6920 0    50   Input ~ 0
 M1-B2
-Text HLabel 2600 7420 0    50   Input ~ 0
+Text HLabel 3850 7020 0    50   Input ~ 0
 M2-A1
-Text HLabel 2600 7520 0    50   Input ~ 0
+Text HLabel 3850 7120 0    50   Input ~ 0
 M2-A2
-Text HLabel 2600 7620 0    50   Input ~ 0
+Text HLabel 3850 7220 0    50   Input ~ 0
 M2-B1
-Text HLabel 2600 7720 0    50   Input ~ 0
+Text HLabel 3850 7320 0    50   Input ~ 0
 M2-B2
-Text HLabel 2600 7820 0    50   Input ~ 0
+Text HLabel 3850 7420 0    50   Input ~ 0
 M3-A1
-Text HLabel 2600 7920 0    50   Input ~ 0
+Text HLabel 3850 7520 0    50   Input ~ 0
 M3-A2
-Text HLabel 2600 8020 0    50   Input ~ 0
+Text HLabel 3850 7620 0    50   Input ~ 0
 M3-B1
-Text HLabel 2600 8120 0    50   Input ~ 0
+Text HLabel 3850 7720 0    50   Input ~ 0
 M3-B2
-Text HLabel 7741 6570 2    50   Input ~ 0
-A-D06
-Text HLabel 5761 4775 2    50   Input ~ 0
-GND_FONTE
 Wire Wire Line
-	2600 7020 2836 7020
+	3850 6620 4086 6620
 Wire Wire Line
-	2600 7120 2836 7120
+	3850 6720 4086 6720
 Wire Wire Line
-	2600 7220 2836 7220
+	3850 6820 4086 6820
 Wire Wire Line
-	2600 7320 2836 7320
+	3850 6920 4086 6920
 Wire Wire Line
-	2600 7420 2836 7420
+	3850 7020 4086 7020
 Wire Wire Line
-	2600 7520 2836 7520
+	3850 7120 4086 7120
 Wire Wire Line
-	2600 7620 2836 7620
+	3850 7220 4086 7220
 Wire Wire Line
-	2600 7720 2836 7720
+	3850 7320 4086 7320
 Wire Wire Line
-	2600 7820 2836 7820
+	3850 7420 4086 7420
 Wire Wire Line
-	2600 7920 2836 7920
+	3850 7520 4086 7520
 Wire Wire Line
-	2600 8020 2836 8020
+	3850 7620 4086 7620
 Wire Wire Line
-	2600 8120 2836 8120
-Wire Wire Line
-	2600 5620 2836 5620
-Wire Wire Line
-	2600 5720 2836 5720
-Wire Wire Line
-	2600 5820 2836 5820
-Wire Wire Line
-	2600 5920 2836 5920
-Wire Wire Line
-	2600 6020 2836 6020
-Wire Wire Line
-	2600 6120 2836 6120
-Wire Wire Line
-	2600 6320 2836 6320
-Wire Wire Line
-	2600 6420 2836 6420
-Wire Wire Line
-	2600 6520 2836 6520
-Wire Wire Line
-	2600 6620 2836 6620
-Wire Wire Line
-	2600 6720 2836 6720
-Wire Wire Line
-	2600 6820 2836 6820
-Wire Wire Line
-	7505 6570 7741 6570
-Wire Wire Line
-	7505 6320 7741 6320
-Wire Wire Line
-	7505 6220 7741 6220
-Wire Wire Line
-	7505 6870 7741 6870
-Wire Wire Line
-	7882 9518 7736 9518
-Connection ~ 7736 8605
-Wire Wire Line
-	7736 8605 8245 8605
-Wire Wire Line
-	7736 8605 7736 9518
-Wire Wire Line
-	5580 4050 5759 4050
-Connection ~ 5580 4050
-Wire Wire Line
-	5240 4775 5761 4775
-Connection ~ 5240 4775
-Wire Wire Line
-	2639 4395 2875 4395
-Text HLabel 2639 4395 0    50   Input ~ 0
+	3850 7720 4086 7720
+Text HLabel 3850 2050 0    50   Input ~ 0
 127-220VAC
-Text HLabel 5759 4050 2    50   Input ~ 0
-5V_ROBÔ
-$Comp
-L Device:R R?
-U 1 1 604100F1
-P 7657 4520
-AR Path="/60444F3A/604100F1" Ref="R?"  Part="1" 
-AR Path="/6045294F/604100F1" Ref="R?"  Part="1" 
-AR Path="/604100F1" Ref="R?"  Part="1" 
-AR Path="/60407144/604100F1" Ref="R?"  Part="1" 
-AR Path="/60528CB7/604100F1" Ref="R14"  Part="1" 
-AR Path="/60529163/604100F1" Ref="R?"  Part="1" 
-F 0 "R14" V 7450 4520 50  0000 C CNN
-F 1 "1k" V 7541 4520 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7587 4520 50  0001 C CNN
-F 3 "~" H 7657 4520 50  0001 C CNN
-	1    7657 4520
-	0    1    1    0   
-$EndComp
 $Sheet
-S 2875 3805 1875 1195
+S 4100 1450 1875 1195
 U 60407996
 F0 "BTIBR-Fonte" 118
 F1 "BTIBR-Fonte.sch" 50
-F2 "12V_ARDUINO" O R 4750 4520 50 
-F3 "12V_PCB" O R 4750 4285 50 
-F4 "5V_ROBÔ" O R 4750 4050 50 
-F5 "GND_FONTE" O R 4750 4775 50 
-F6 "ALIMENTAÇÃO_REDE" I L 2875 4395 50 
+F2 "12V_ARDUINO" O R 5975 2165 50 
+F3 "12V_PCB" O R 5975 1930 50 
+F4 "5V_ROBÔ" O R 5975 1695 50 
+F5 "GND_FONTE" O R 5975 2420 50 
+F6 "ALIMENTAÇÃO_REDE" I L 4100 2050 50 
 $EndSheet
 $Sheet
-S 2836 5511 2029 4509
+S 4086 5111 2029 4509
 U 60408609
 F0 "BTIBR-PCB" 118
 F1 "BTIBR-PCB.sch" 50
-F2 "A-D07" I R 4865 5920 50 
-F3 "A-D08" I R 4865 6020 50 
-F4 "A-D09" I R 4865 6120 50 
-F5 "A-D22" I R 4865 6820 50 
-F6 "A-D23" I R 4865 6920 50 
-F7 "A-D24" I R 4865 7020 50 
-F8 "A-D25" I R 4865 7120 50 
-F9 "A-D26" I R 4865 7220 50 
-F10 "A-D28" I R 4865 7420 50 
-F11 "A-D29" I R 4865 7520 50 
-F12 "A-D30" I R 4865 7620 50 
-F13 "A-D31" I R 4865 7720 50 
-F14 "A-D32" I R 4865 7820 50 
-F15 "A-D33" I R 4865 7920 50 
-F16 "A-D34" I R 4865 8020 50 
-F17 "A-D35" I R 4865 8120 50 
-F18 "A-D36" I R 4865 8220 50 
-F19 "A-D37" I R 4865 8320 50 
-F20 "A-D38" I R 4865 8420 50 
-F21 "A-D39" I R 4865 8520 50 
-F22 "A-D40" I R 4865 8620 50 
-F23 "A-D41" I R 4865 8720 50 
-F24 "A-D42" I R 4865 8820 50 
-F25 "A-D43" I R 4865 8920 50 
-F26 "A-D27" I R 4865 7320 50 
-F27 "A-D47" I R 4865 9020 50 
-F28 "A-D48" I R 4865 9120 50 
-F29 "A-GND2" I R 4865 9720 50 
-F30 "12V_PCB" I R 4865 5620 50 
-F31 "GND_FONTE" I R 4865 5720 50 
-F32 "M1-A1" I L 2836 7020 50 
-F33 "M1-A2" I L 2836 7120 50 
-F34 "M1-B1" I L 2836 7220 50 
-F35 "M1-B2" I L 2836 7320 50 
-F36 "M2-A1" I L 2836 7420 50 
-F37 "M2-A2" I L 2836 7520 50 
-F38 "M2-B1" I L 2836 7620 50 
-F39 "M2-B2" I L 2836 7720 50 
-F40 "M3-A1" I L 2836 7820 50 
-F41 "M3-A2" I L 2836 8020 50 
-F42 "M3-B1" I L 2836 7920 50 
-F43 "M3-B2" I L 2836 8120 50 
-F44 "POT1-SIN" I L 2836 5720 50 
-F45 "POT1-VCC" I L 2836 5620 50 
-F46 "POT2-VCC" I L 2836 5920 50 
-F47 "POT1-GND" I L 2836 5820 50 
-F48 "POT2-GND" I L 2836 6120 50 
-F49 "POT2-SIN" I L 2836 6020 50 
-F50 "A-GND5" I R 4865 9920 50 
-F51 "A-5V1" I R 4865 9620 50 
-F52 "A-A00" I R 4865 9320 50 
-F53 "A-A01" I R 4865 9420 50 
-F54 "M2_FDC+" I L 2836 6520 50 
-F55 "M1_FDC-" I L 2836 6420 50 
-F56 "M1_FDC+" I L 2836 6320 50 
-F57 "M2_FDC-" I L 2836 6620 50 
-F58 "M3_FDC-" I L 2836 6820 50 
-F59 "M3_FDC+" I L 2836 6720 50 
-F60 "A-D16" I R 4865 6420 50 
-F61 "A-D19" I R 4865 6720 50 
-F62 "A-D18" I R 4865 6620 50 
-F63 "A-D17" I R 4865 6520 50 
-F64 "A-D15" I R 4865 6320 50 
-F65 "A-D14" I R 4865 6220 50 
-F66 "A-GND3" I R 4865 9820 50 
+F32 "M1-A1" I L 4086 6620 50 
+F33 "M1-A2" I L 4086 6720 50 
+F34 "M1-B1" I L 4086 6820 50 
+F35 "M1-B2" I L 4086 6920 50 
+F36 "M2-A1" I L 4086 7020 50 
+F37 "M2-A2" I L 4086 7120 50 
+F38 "M2-B1" I L 4086 7220 50 
+F39 "M2-B2" I L 4086 7320 50 
+F40 "M3-A1" I L 4086 7420 50 
+F41 "M3-A2" I L 4086 7620 50 
+F42 "M3-B1" I L 4086 7520 50 
+F43 "M3-B2" I L 4086 7720 50 
 $EndSheet
 $Sheet
-S 5605 5530 1900 4500
-U 60407F53
-F0 "BTIBR-Arduino" 118
-F1 "BTIBR-Arduino.sch" 50
-F2 "A-D19" I L 5605 6720 50 
-F3 "A-D18" I L 5605 6620 50 
-F4 "A-D17" I L 5605 6520 50 
-F5 "A-D16" I L 5605 6420 50 
-F6 "A-D15" I L 5605 6320 50 
-F7 "A-D14" I L 5605 6220 50 
-F8 "A-D20" I R 7505 6220 50 
-F9 "A-D21" I R 7505 6320 50 
-F10 "A-A00" I L 5605 9320 50 
-F11 "A-A01" I L 5605 9420 50 
-F12 "12V_ARDUINO" I L 5605 5620 50 
-F13 "A-D07" I L 5605 5920 50 
-F14 "A-D08" I L 5605 6020 50 
-F15 "A-D09" I L 5605 6120 50 
-F16 "A-D10" I R 7505 8805 50 
-F17 "A-D11" I R 7505 8305 50 
-F18 "A-D12" I R 7505 8205 50 
-F19 "A-D13" I R 7505 9005 50 
-F20 "A-D22" I L 5605 6820 50 
-F21 "A-D23" I L 5605 6920 50 
-F22 "A-D24" I L 5605 7020 50 
-F23 "A-D25" I L 5605 7120 50 
-F24 "A-D26" I L 5605 7220 50 
-F25 "A-D27" I L 5605 7320 50 
-F26 "A-D28" I L 5605 7420 50 
-F27 "A-D29" I L 5605 7520 50 
-F28 "A-D30" I L 5605 7620 50 
-F29 "A-D31" I L 5605 7720 50 
-F30 "A-D32" I L 5605 7820 50 
-F31 "A-D33" I L 5605 7920 50 
-F32 "A-D34" I L 5605 8020 50 
-F33 "A-D35" I L 5605 8120 50 
-F34 "A-D36" I L 5605 8220 50 
-F35 "A-D37" I L 5605 8320 50 
-F36 "A-D38" I L 5605 8420 50 
-F37 "A-D39" I L 5605 8520 50 
-F38 "A-D40" I L 5605 8620 50 
-F39 "A-D41" I L 5605 8720 50 
-F40 "A-D42" I L 5605 8820 50 
-F41 "A-D43" I L 5605 8920 50 
-F42 "A-D47" I L 5605 9020 50 
-F43 "A-D48" I L 5605 9120 50 
-F44 "A-D49" I R 7505 5620 50 
-F45 "GND_FONTE" I L 5605 5720 50 
-F46 "A-GND2" I L 5605 9720 50 
-F47 "A-GND3" I L 5605 9820 50 
-F48 "A-5V1" I L 5605 9620 50 
-F49 "A-GND5" I L 5605 9920 50 
-F50 "A-5V3" I R 7505 6870 50 
-F51 "A-GND6" I R 7505 8605 50 
-F52 "A-3.3V" I R 7505 8705 50 
-F53 "A-D06" I R 7505 6570 50 
-$EndSheet
-$Comp
-L FalcaroLib:Module_PS2_wifi_control U4
-U 1 1 606E07F0
-P 8495 8705
-F 0 "U4" V 8398 8833 118 0000 L CNN
-F 1 "Module_PS2_wifi_control" V 8591 8833 118 0000 L CNN
-F 2 "" H 8495 8905 118 0001 C CNN
-F 3 "https://fccid.io/RNIP731607-D/User-Manual/USERS-MANUAL-494255" H 8495 8905 118 0001 C CNN
-	1    8495 8705
-	0    1    1    0   
-$EndComp
-$Sheet
-S 11500 2700 2450 3500
+S 10750 2850 2450 3500
 U 60CEB181
 F0 "BTIBR-CLP" 50
 F1 "BTIBR-CLP.sch" 50
 $EndSheet
+Wire Wire Line
+	4100 2050 3850 2050
+$Comp
+L Device:LED D?
+U 1 1 61B08028
+P 7770 5825
+AR Path="/60528CB7/60408609/61B08028" Ref="D?"  Part="1" 
+AR Path="/60529163/60408609/61B08028" Ref="D?"  Part="1" 
+AR Path="/61B08028" Ref="D?"  Part="1" 
+AR Path="/60528CB7/61B08028" Ref="D?"  Part="1" 
+F 0 "D?" H 7763 5662 50  0000 C CNN
+F 1 "LED" H 7763 5661 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7770 5825 50  0001 C CNN
+F 3 "~" H 7770 5825 50  0001 C CNN
+	1    7770 5825
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61B0802E
+P 7770 6325
+AR Path="/60528CB7/60408609/61B0802E" Ref="D?"  Part="1" 
+AR Path="/60529163/60408609/61B0802E" Ref="D?"  Part="1" 
+AR Path="/61B0802E" Ref="D?"  Part="1" 
+AR Path="/60528CB7/61B0802E" Ref="D?"  Part="1" 
+F 0 "D?" H 7763 6162 50  0000 C CNN
+F 1 "LED" H 7763 6161 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7770 6325 50  0001 C CNN
+F 3 "~" H 7770 6325 50  0001 C CNN
+	1    7770 6325
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61B08034
+P 7770 6825
+AR Path="/60528CB7/60408609/61B08034" Ref="D?"  Part="1" 
+AR Path="/60529163/60408609/61B08034" Ref="D?"  Part="1" 
+AR Path="/61B08034" Ref="D?"  Part="1" 
+AR Path="/60528CB7/61B08034" Ref="D?"  Part="1" 
+F 0 "D?" H 7763 6662 50  0000 C CNN
+F 1 "LED" H 7763 6661 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7770 6825 50  0001 C CNN
+F 3 "~" H 7770 6825 50  0001 C CNN
+	1    7770 6825
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61B0803A
+P 7770 7325
+AR Path="/60528CB7/60408609/61B0803A" Ref="D?"  Part="1" 
+AR Path="/60529163/60408609/61B0803A" Ref="D?"  Part="1" 
+AR Path="/61B0803A" Ref="D?"  Part="1" 
+AR Path="/60528CB7/61B0803A" Ref="D?"  Part="1" 
+F 0 "D?" H 7763 7162 50  0000 C CNN
+F 1 "LED" H 7763 7161 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7770 7325 50  0001 C CNN
+F 3 "~" H 7770 7325 50  0001 C CNN
+	1    7770 7325
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61B08040
+P 7770 7775
+AR Path="/60528CB7/60408609/61B08040" Ref="D?"  Part="1" 
+AR Path="/60529163/60408609/61B08040" Ref="D?"  Part="1" 
+AR Path="/61B08040" Ref="D?"  Part="1" 
+AR Path="/60528CB7/61B08040" Ref="D?"  Part="1" 
+F 0 "D?" H 7763 7612 50  0000 C CNN
+F 1 "LED" H 7763 7611 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7770 7775 50  0001 C CNN
+F 3 "~" H 7770 7775 50  0001 C CNN
+	1    7770 7775
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61B08046
+P 7770 8275
+AR Path="/60528CB7/60408609/61B08046" Ref="D?"  Part="1" 
+AR Path="/60529163/60408609/61B08046" Ref="D?"  Part="1" 
+AR Path="/61B08046" Ref="D?"  Part="1" 
+AR Path="/60528CB7/61B08046" Ref="D?"  Part="1" 
+F 0 "D?" H 7763 8112 50  0000 C CNN
+F 1 "LED" H 7763 8111 50  0001 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 7770 8275 50  0001 C CNN
+F 3 "~" H 7770 8275 50  0001 C CNN
+	1    7770 8275
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8170 8125 8170 8275
+Wire Wire Line
+	8320 8125 8170 8125
+Wire Wire Line
+	8170 7175 8320 7175
+Wire Wire Line
+	8170 7625 8170 7775
+Wire Wire Line
+	8320 7625 8170 7625
+Wire Wire Line
+	8170 7175 8170 7325
+Wire Wire Line
+	8170 6675 8170 6825
+Wire Wire Line
+	8320 6675 8170 6675
+Wire Wire Line
+	8170 6175 8170 6325
+Wire Wire Line
+	8320 6175 8170 6175
+Wire Wire Line
+	8170 5675 8170 5825
+Wire Wire Line
+	8320 5675 8170 5675
+Text GLabel 8320 8125 2    50   Input ~ 0
+FDC6
+Text GLabel 8320 7625 2    50   Input ~ 0
+FDC5
+Text GLabel 8320 7175 2    50   Input ~ 0
+FDC4
+Text GLabel 8320 6675 2    50   Input ~ 0
+FDC3
+Text GLabel 8320 6175 2    50   Input ~ 0
+FDC2
+Text GLabel 8320 5675 2    50   Input ~ 0
+FDC1
+$Comp
+L Device:R R?
+U 1 1 61B0805E
+P 8760 8275
+AR Path="/60528CB7/60408609/61B0805E" Ref="R?"  Part="1" 
+AR Path="/60529163/60408609/61B0805E" Ref="R?"  Part="1" 
+AR Path="/61B0805E" Ref="R?"  Part="1" 
+AR Path="/60528CB7/61B0805E" Ref="R?"  Part="1" 
+F 0 "R?" V 8553 8275 50  0000 C CNN
+F 1 "1k" V 8644 8275 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8690 8275 50  0001 C CNN
+F 3 "~" H 8760 8275 50  0001 C CNN
+	1    8760 8275
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B08064
+P 8760 7775
+AR Path="/60528CB7/60408609/61B08064" Ref="R?"  Part="1" 
+AR Path="/60529163/60408609/61B08064" Ref="R?"  Part="1" 
+AR Path="/61B08064" Ref="R?"  Part="1" 
+AR Path="/60528CB7/61B08064" Ref="R?"  Part="1" 
+F 0 "R?" V 8553 7775 50  0000 C CNN
+F 1 "1k" V 8644 7775 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8690 7775 50  0001 C CNN
+F 3 "~" H 8760 7775 50  0001 C CNN
+	1    8760 7775
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B0806A
+P 8760 7325
+AR Path="/60528CB7/60408609/61B0806A" Ref="R?"  Part="1" 
+AR Path="/60529163/60408609/61B0806A" Ref="R?"  Part="1" 
+AR Path="/61B0806A" Ref="R?"  Part="1" 
+AR Path="/60528CB7/61B0806A" Ref="R?"  Part="1" 
+F 0 "R?" V 8553 7325 50  0000 C CNN
+F 1 "1k" V 8644 7325 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8690 7325 50  0001 C CNN
+F 3 "~" H 8760 7325 50  0001 C CNN
+	1    8760 7325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B08070
+P 8760 6825
+AR Path="/60528CB7/60408609/61B08070" Ref="R?"  Part="1" 
+AR Path="/60529163/60408609/61B08070" Ref="R?"  Part="1" 
+AR Path="/61B08070" Ref="R?"  Part="1" 
+AR Path="/60528CB7/61B08070" Ref="R?"  Part="1" 
+F 0 "R?" V 8553 6825 50  0000 C CNN
+F 1 "1k" V 8644 6825 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8690 6825 50  0001 C CNN
+F 3 "~" H 8760 6825 50  0001 C CNN
+	1    8760 6825
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B08076
+P 8760 6325
+AR Path="/60528CB7/60408609/61B08076" Ref="R?"  Part="1" 
+AR Path="/60529163/60408609/61B08076" Ref="R?"  Part="1" 
+AR Path="/61B08076" Ref="R?"  Part="1" 
+AR Path="/60528CB7/61B08076" Ref="R?"  Part="1" 
+F 0 "R?" V 8553 6325 50  0000 C CNN
+F 1 "1k" V 8644 6325 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8690 6325 50  0001 C CNN
+F 3 "~" H 8760 6325 50  0001 C CNN
+	1    8760 6325
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61B0807C
+P 8760 5825
+AR Path="/60528CB7/60408609/61B0807C" Ref="R?"  Part="1" 
+AR Path="/60529163/60408609/61B0807C" Ref="R?"  Part="1" 
+AR Path="/61B0807C" Ref="R?"  Part="1" 
+AR Path="/60528CB7/61B0807C" Ref="R?"  Part="1" 
+F 0 "R?" V 8553 5825 50  0000 C CNN
+F 1 "1k" V 8644 5825 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8690 5825 50  0001 C CNN
+F 3 "~" H 8760 5825 50  0001 C CNN
+	1    8760 5825
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7620 5825 7470 5825
+Wire Wire Line
+	7620 6325 7470 6325
+Wire Wire Line
+	7620 7325 7470 7325
+Wire Wire Line
+	7920 5825 8170 5825
+Connection ~ 8170 5825
+Wire Wire Line
+	8170 5825 8610 5825
+Wire Wire Line
+	7920 6325 8170 6325
+Wire Wire Line
+	7920 6825 8170 6825
+Wire Wire Line
+	7920 7325 8170 7325
+Wire Wire Line
+	7920 7775 8170 7775
+Wire Wire Line
+	7920 8275 8170 8275
+Wire Wire Line
+	8170 6325 8610 6325
+Wire Wire Line
+	8170 6825 8610 6825
+Wire Wire Line
+	8170 7325 8610 7325
+Wire Wire Line
+	8170 7775 8610 7775
+Wire Wire Line
+	8170 8275 8610 8275
+Connection ~ 8170 6325
+Connection ~ 8170 6825
+Connection ~ 8170 7325
+Connection ~ 8170 7775
+Connection ~ 8170 8275
+$Comp
+L Connector:Conn_01x07_Male J?
+U 1 1 61B08097
+P 10430 7110
+AR Path="/60528CB7/60408609/61B08097" Ref="J?"  Part="1" 
+AR Path="/60529163/60408609/61B08097" Ref="J?"  Part="1" 
+AR Path="/61B08097" Ref="J?"  Part="1" 
+AR Path="/60528CB7/61B08097" Ref="J?"  Part="1" 
+F 0 "J?" H 10535 7555 50  0000 C CNN
+F 1 "Conn_01x07_Male" H 10538 7500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical" H 10430 7110 50  0001 C CNN
+F 3 "~" H 10430 7110 50  0001 C CNN
+	1    10430 7110
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7470 7875 7470 8275
+Wire Wire Line
+	7470 8275 7620 8275
+Wire Wire Line
+	7470 7675 7470 7325
+Wire Wire Line
+	7470 6425 7470 6825
+Wire Wire Line
+	7470 6825 7620 6825
+Wire Wire Line
+	7470 6225 7470 5825
+Text GLabel 9340 7075 2    50   Input ~ 0
+FDC-GND
+Wire Wire Line
+	8910 5825 9110 5825
+Wire Wire Line
+	9110 8275 8910 8275
+Wire Wire Line
+	8910 7775 9110 7775
+Connection ~ 9110 7775
+Wire Wire Line
+	9110 7775 9110 8275
+Wire Wire Line
+	9110 5825 9110 6325
+Wire Wire Line
+	8910 7325 9110 7325
+Connection ~ 9110 7325
+Wire Wire Line
+	9110 7325 9110 7775
+Wire Wire Line
+	8910 6825 9110 6825
+Connection ~ 9110 6825
+Wire Wire Line
+	9110 6825 9110 7075
+Wire Wire Line
+	8910 6325 9110 6325
+Connection ~ 9110 6325
+Wire Wire Line
+	9110 6325 9110 6825
+Wire Wire Line
+	9340 7075 9110 7075
+Connection ~ 9110 7075
+Wire Wire Line
+	9110 7075 9110 7325
+Text GLabel 10230 7410 0    50   Input ~ 0
+FDC-GND
+Text GLabel 10230 6810 0    50   Input ~ 0
+FDC1
+Text GLabel 10230 6910 0    50   Input ~ 0
+FDC2
+Text GLabel 10230 7010 0    50   Input ~ 0
+FDC3
+Text GLabel 10230 7110 0    50   Input ~ 0
+FDC4
+Text GLabel 10230 7210 0    50   Input ~ 0
+FDC5
+Text GLabel 10230 7310 0    50   Input ~ 0
+FDC6
+Text HLabel 7220 6425 0    50   Input ~ 0
+M2_FDC+
+Text HLabel 7225 6325 0    50   Input ~ 0
+M1_FDC-
+Text HLabel 7225 6225 0    50   Input ~ 0
+M1_FDC+
+Text HLabel 7220 7675 0    50   Input ~ 0
+M2_FDC-
+Text HLabel 7220 7875 0    50   Input ~ 0
+M3_FDC-
+Text HLabel 7220 7775 0    50   Input ~ 0
+M3_FDC+
+Wire Wire Line
+	10430 7310 10510 7310
+Wire Wire Line
+	10430 7410 10510 7410
+Wire Wire Line
+	10430 7110 10510 7110
+Wire Wire Line
+	10430 7210 10510 7210
+Wire Wire Line
+	10430 7010 10510 7010
+Wire Wire Line
+	10430 6810 10510 6810
+Wire Wire Line
+	10430 6910 10510 6910
+Text Notes 8335 5315 0    79   ~ 0
+Sinais fins de curso mecânico
+Wire Wire Line
+	7620 7775 7470 7775
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 61B080CC
+P 7270 7775
+AR Path="/60528CB7/60408609/61B080CC" Ref="J?"  Part="1" 
+AR Path="/60529163/60408609/61B080CC" Ref="J?"  Part="1" 
+AR Path="/61B080CC" Ref="J?"  Part="1" 
+AR Path="/60528CB7/61B080CC" Ref="J?"  Part="1" 
+F 0 "J?" H 7240 8000 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 7188 8001 50  0001 C CNN
+F 2 "FalcaroLib:Connector_Screw_3pin" H 7270 7775 50  0001 C CNN
+F 3 "~" H 7270 7775 50  0001 C CNN
+	1    7270 7775
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 61B080D2
+P 7270 6325
+AR Path="/60528CB7/60408609/61B080D2" Ref="J?"  Part="1" 
+AR Path="/60529163/60408609/61B080D2" Ref="J?"  Part="1" 
+AR Path="/61B080D2" Ref="J?"  Part="1" 
+AR Path="/60528CB7/61B080D2" Ref="J?"  Part="1" 
+F 0 "J?" H 7240 6550 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 7188 6551 50  0001 C CNN
+F 2 "FalcaroLib:Connector_Screw_3pin" H 7270 6325 50  0001 C CNN
+F 3 "~" H 7270 6325 50  0001 C CNN
+	1    7270 6325
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 61B23CF6
+P 7800 3150
+AR Path="/60528CB7/60408609/61B23CF6" Ref="J?"  Part="1" 
+AR Path="/60529163/60408609/61B23CF6" Ref="J?"  Part="1" 
+AR Path="/61B23CF6" Ref="J?"  Part="1" 
+AR Path="/60528CB7/61B23CF6" Ref="J?"  Part="1" 
+F 0 "J?" H 7755 2930 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7880 3101 50  0001 L CNN
+F 2 "FalcaroLib:Connector_Screw_3pin" H 7800 3150 50  0001 C CNN
+F 3 "~" H 7800 3150 50  0001 C CNN
+	1    7800 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 61B23CFC
+P 7800 3600
+AR Path="/60528CB7/60408609/61B23CFC" Ref="J?"  Part="1" 
+AR Path="/60529163/60408609/61B23CFC" Ref="J?"  Part="1" 
+AR Path="/61B23CFC" Ref="J?"  Part="1" 
+AR Path="/60528CB7/61B23CFC" Ref="J?"  Part="1" 
+F 0 "J?" H 7755 3380 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7880 3551 50  0001 L CNN
+F 2 "FalcaroLib:Connector_Screw_3pin" H 7800 3600 50  0001 C CNN
+F 3 "~" H 7800 3600 50  0001 C CNN
+	1    7800 3600
+	-1   0    0    1   
+$EndComp
+Text HLabel 7750 3150 0    50   Input ~ 0
+POT1-SIN
+Text HLabel 7750 3050 0    50   Input ~ 0
+POT1-VCC
+Text HLabel 7750 3500 0    50   Input ~ 0
+POT2-VCC
+Text HLabel 7750 3250 0    50   Input ~ 0
+POT1-GND
+Text HLabel 7750 3700 0    50   Input ~ 0
+POT2-GND
+Text HLabel 7750 3600 0    50   Input ~ 0
+POT2-SIN
+Text Notes 7520 2560 0    79   ~ 0
+Sinal potenciômetros
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 61B23D09
+P 7800 4050
+AR Path="/60528CB7/60408609/61B23D09" Ref="J?"  Part="1" 
+AR Path="/60529163/60408609/61B23D09" Ref="J?"  Part="1" 
+AR Path="/61B23D09" Ref="J?"  Part="1" 
+AR Path="/60528CB7/61B23D09" Ref="J?"  Part="1" 
+F 0 "J?" H 7755 3830 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 7880 4001 50  0001 L CNN
+F 2 "FalcaroLib:Connector_Screw_3pin" H 7800 4050 50  0001 C CNN
+F 3 "~" H 7800 4050 50  0001 C CNN
+	1    7800 4050
+	-1   0    0    1   
+$EndComp
+Text HLabel 7750 3950 0    50   Input ~ 0
+POT3-VCC
+Text HLabel 7750 4150 0    50   Input ~ 0
+POT3-GND
+Text HLabel 7750 4050 0    50   Input ~ 0
+POT3-SIN
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 61B23D12
+P 8500 3500
+AR Path="/60528CB7/60408609/61B23D12" Ref="J?"  Part="1" 
+AR Path="/60529163/60408609/61B23D12" Ref="J?"  Part="1" 
+AR Path="/61B23D12" Ref="J?"  Part="1" 
+AR Path="/60528CB7/61B23D12" Ref="J?"  Part="1" 
+F 0 "J?" H 8455 3280 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 8580 3451 50  0001 L CNN
+F 2 "FalcaroLib:Connector_Screw_3pin" H 8500 3500 50  0001 C CNN
+F 3 "~" H 8500 3500 50  0001 C CNN
+	1    8500 3500
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61B23D18
+P 8050 2950
+AR Path="/60528CB7/60408609/61B23D18" Ref="#PWR?"  Part="1" 
+AR Path="/60528CB7/61B23D18" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 8050 2800 50  0001 C CNN
+F 1 "+5V" H 8000 3100 50  0000 L CNN
+F 2 "" H 8050 2950 50  0001 C CNN
+F 3 "" H 8050 2950 50  0001 C CNN
+	1    8050 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2950 8050 3050
+Wire Wire Line
+	8000 3050 8050 3050
+$Comp
+L Connector:Screw_Terminal_01x03 J?
+U 1 1 61B23D20
+P 8500 3800
+AR Path="/60528CB7/60408609/61B23D20" Ref="J?"  Part="1" 
+AR Path="/60529163/60408609/61B23D20" Ref="J?"  Part="1" 
+AR Path="/61B23D20" Ref="J?"  Part="1" 
+AR Path="/60528CB7/61B23D20" Ref="J?"  Part="1" 
+F 0 "J?" H 8450 4050 50  0000 L CNN
+F 1 "Screw_Terminal_01x03" H 8580 3751 50  0001 L CNN
+F 2 "FalcaroLib:Connector_Screw_3pin" H 8500 3800 50  0001 C CNN
+F 3 "~" H 8500 3800 50  0001 C CNN
+	1    8500 3800
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8000 3150 8250 3150
+Wire Wire Line
+	8250 3150 8250 3400
+Wire Wire Line
+	8250 3400 8300 3400
+Wire Wire Line
+	8300 3500 8200 3500
+Wire Wire Line
+	8200 3500 8200 3250
+Wire Wire Line
+	8200 3250 8000 3250
+Wire Wire Line
+	8050 3050 8050 3500
+Wire Wire Line
+	8050 3500 8000 3500
+Connection ~ 8050 3050
+Wire Wire Line
+	8050 3500 8050 3950
+Wire Wire Line
+	8050 3950 8000 3950
+Connection ~ 8050 3500
+Wire Wire Line
+	8300 3600 8000 3600
+Wire Wire Line
+	8000 3700 8300 3700
+Wire Wire Line
+	8300 3800 8200 3800
+Wire Wire Line
+	8200 3800 8200 4050
+Wire Wire Line
+	8200 4050 8000 4050
+Wire Wire Line
+	8300 3900 8250 3900
+Wire Wire Line
+	8250 3900 8250 4150
+Wire Wire Line
+	8250 4150 8000 4150
 $EndSCHEMATC

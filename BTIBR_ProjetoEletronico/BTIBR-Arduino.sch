@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
-Title "BTIBR - Arduino Mega 2560"
-Date "2021-03-23"
-Rev "2.0"
+Title "Bancada de Testes Integrada com Braço Robótico"
+Date "2021-07-30"
+Rev "3.0"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
-Comment3 "Bruno Rafael Pires de Camargo"
-Comment4 ""
+Comment3 "Lucas Melaré"
+Comment4 "Bruno Rafael Pires de Camargo"
 $EndDescr
 Text HLabel 4500 1500 0    50   Input ~ 0
 A-D19

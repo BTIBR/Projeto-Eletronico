@@ -3,15 +3,15 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 7
-Title "BTIBR - Fonte de Alimentação"
-Date "2021-03-23"
-Rev "2.0"
+Sheet 3 6
+Title "Bancada de Testes Integrada com Braço Robótico"
+Date "2021-07-30"
+Rev "3.0"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
-Comment3 "Bruno Rafael Pires de Camargo"
-Comment4 ""
+Comment3 "Lucas Melaré"
+Comment4 "Bruno Rafael Pires de Camargo"
 $EndDescr
 Text Notes 4760 2015 0    236  ~ 47
 KP-522 500W
