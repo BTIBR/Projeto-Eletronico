@@ -13,10 +13,10 @@ Comment2 "Rafael Giaretta Falcaro"
 Comment3 "Lucas Melaré"
 Comment4 "Bruno Rafael Pires de Camargo"
 $EndDescr
-Text Notes 4760 2015 0    236  ~ 47
+Text Notes 4510 1365 0    236  ~ 47
 KP-522 500W
 $Bitmap
-Pos 6035 3940
+Pos 5785 3290
 Scale 2.000000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 02 00 00 00 01 C2 08 02 00 00 00 16 D2 E6 
@@ -6609,21 +6609,54 @@ CB 03 E3 0A 60 84 11 46 18 E1 8A C2 28 00 46 18 61 84 11 AE 28 8C 02 60 84 11 46
 EndData
 $EndBitmap
 Wire Notes Line
-	4175 2305 4175 5355
+	3925 1655 3925 4705
 Wire Notes Line
-	4175 5355 7770 5355
+	3925 4705 7520 4705
 Wire Notes Line
-	7770 5355 7770 2300
+	7520 4705 7520 1650
 Wire Notes Line
-	7770 2300 4175 2300
-Text HLabel 7770 2910 2    118  Output ~ 0
+	7520 1650 3925 1650
+Text HLabel 7520 2260 2    118  Output ~ 0
 12V-FONTE-1
-Text HLabel 7770 3495 2    118  Output ~ 0
+Text HLabel 7520 2845 2    118  Output ~ 0
 5V-FONTE-1
-Text HLabel 7770 4095 2    118  Output ~ 0
+Text HLabel 7520 3445 2    118  Output ~ 0
 0V-FONTE-1
-Text HLabel 4125 3845 0    118  Input ~ 0
+Text HLabel 3875 3195 0    118  Input ~ 0
 ALIMENTAÇÃO-REDE
-Text HLabel 7770 4700 2    118  Output ~ 0
+Text HLabel 7520 4050 2    118  Output ~ 0
 PE-FONTE-1
+Text Notes 5175 5200 0    79   ~ 0
+Regulação 8V (Motor 3)
+Text HLabel 5200 5700 0    50   Input ~ 0
+12V-FONTE-1
+$Comp
+L FalcaroLib:Module_LM2596 U?
+U 1 1 610BF5FE
+P 5800 5850
+AR Path="/60528CB7/60408609/610BF5FE" Ref="U?"  Part="1" 
+AR Path="/60529163/60408609/610BF5FE" Ref="U?"  Part="1" 
+AR Path="/610BF5FE" Ref="U?"  Part="1" 
+AR Path="/60528CB7/60407996/610BF5FE" Ref="U21"  Part="1" 
+F 0 "U21" H 5800 6219 47  0000 C CNN
+F 1 "Module_LM2596" H 5800 6132 47  0000 C CNN
+F 2 "FalcaroLib:Module_LM2596" H 6000 6100 118 0001 C CNN
+F 3 "" H 6000 6100 118 0001 C CNN
+	1    5800 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 5700 5350 5700
+Text HLabel 5200 5950 0    50   Input ~ 0
+0V-FONTE-1
+Wire Wire Line
+	5200 5950 5350 5950
+Text HLabel 6400 5700 2    50   Output ~ 0
+8V-FONTE-1
+Wire Wire Line
+	6400 5700 6250 5700
+Wire Wire Line
+	6400 5950 6250 5950
+Text HLabel 6400 5950 2    50   Output ~ 0
+0V-FONTE-1
 $EndSCHEMATC
