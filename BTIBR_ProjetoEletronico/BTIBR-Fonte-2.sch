@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 8
-Title "Fonte de Alimentação 2"
-Date "2021-07-31"
-Rev "3.0"
+Sheet 8 9
+Title "Bancada de Testes Integrada com Braço Robótico"
+Date "2021-10-03"
+Rev "3.1"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"

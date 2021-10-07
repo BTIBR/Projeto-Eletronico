@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 8
-Title "Bancada de Testes"
-Date "2021-07-31"
-Rev "3.0"
+Sheet 3 9
+Title "Bancada de Testes Integrada com Braço Robótico"
+Date "2021-10-03"
+Rev "3.1"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
@@ -3344,10 +3344,10 @@ Text HLabel 9339 4815 2    50   Input ~ 0
 Wire Wire Line
 	9339 4815 9139 4815
 $Comp
-L FalcaroLib:Module_HX711 U?
+L FalcaroLib:Module_HX711 U22
 U 1 1 613AC44A
 P 8639 4665
-F 0 "U?" H 8639 5182 50  0000 C CNN
+F 0 "U22" H 8639 5182 50  0000 C CNN
 F 1 "Module_HX711" H 8639 5091 50  0000 C CNN
 F 2 "FalcaroLib:Module_HX711" H 8689 4215 50  0001 C CNN
 F 3 "https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf" H 9489 4265 50  0001 C CNN
@@ -3644,8 +3644,14 @@ Wire Wire Line
 	7983 4532 7983 4615
 Wire Wire Line
 	8139 4715 7925 4715
+Text HLabel 9339 4615 2    50   Output ~ 0
+CC-DT
+NoConn ~ 8139 4815
+NoConn ~ 8139 4915
+Text HLabel 9339 4715 2    50   Output ~ 0
+CC-SCK
 Wire Wire Line
-	9650 4650 9900 4650
-Text HLabel 9900 4650 2    50   Output ~ 0
-CELULA-CARGA
+	9339 4615 9139 4615
+Wire Wire Line
+	9339 4715 9139 4715
 $EndSCHEMATC
