@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 6 9
 Title "Bancada de Testes Integrada com Braço Robótico"
-Date "2021-10-03"
-Rev "3.1"
+Date "2021-10-09"
+Rev "3.2"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
@@ -6626,37 +6626,4 @@ Text HLabel 3875 3195 0    118  Input ~ 0
 ALIMENTAÇÃO-REDE
 Text HLabel 7520 4050 2    118  Output ~ 0
 PE-FONTE-1
-Text Notes 5175 5200 0    79   ~ 0
-Regulação 8V (Motor 3)
-Text HLabel 5200 5700 0    50   Input ~ 0
-12V-FONTE-1
-$Comp
-L FalcaroLib:Module_LM2596 U?
-U 1 1 610BF5FE
-P 5800 5850
-AR Path="/60528CB7/60408609/610BF5FE" Ref="U?"  Part="1" 
-AR Path="/60529163/60408609/610BF5FE" Ref="U?"  Part="1" 
-AR Path="/610BF5FE" Ref="U?"  Part="1" 
-AR Path="/60528CB7/60407996/610BF5FE" Ref="U21"  Part="1" 
-F 0 "U21" H 5800 6219 47  0000 C CNN
-F 1 "Module_LM2596" H 5800 6132 47  0000 C CNN
-F 2 "FalcaroLib:Module_LM2596" H 6000 6100 118 0001 C CNN
-F 3 "" H 6000 6100 118 0001 C CNN
-	1    5800 5850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 5700 5350 5700
-Text HLabel 5200 5950 0    50   Input ~ 0
-0V-FONTE-1
-Wire Wire Line
-	5200 5950 5350 5950
-Text HLabel 6400 5700 2    50   Output ~ 0
-8V-FONTE-1
-Wire Wire Line
-	6400 5700 6250 5700
-Wire Wire Line
-	6400 5950 6250 5950
-Text HLabel 6400 5950 2    50   Output ~ 0
-0V-FONTE-1
 $EndSCHEMATC

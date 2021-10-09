@@ -3,10 +3,10 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 9 9
 Title "Bancada de Testes Integrada com Braço Robótico"
-Date "2021-10-03"
-Rev "3.1"
+Date "2021-10-09"
+Rev "3.2"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
@@ -19,20 +19,6 @@ Text Notes 6400 950  0    118  ~ 0
 M1 - BASE (Rz)
 Text Notes 8950 950  0    118  ~ 0
 M2 - OMBRO (Rx1)
-$Comp
-L power:+12V #PWR03
-U 1 1 5F586892
-P 7300 1300
-AR Path="/60528CB7/60408609/5F586892" Ref="#PWR03"  Part="1" 
-AR Path="/60529163/60408609/5F586892" Ref="#PWR?"  Part="1" 
-AR Path="/5F586892" Ref="#PWR0101"  Part="1" 
-F 0 "#PWR03" H 7300 1150 50  0001 C CNN
-F 1 "+12V" H 7315 1473 50  0000 C CNN
-F 2 "" H 7300 1300 50  0001 C CNN
-F 3 "" H 7300 1300 50  0001 C CNN
-	1    7300 1300
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J6
 U 1 1 5F5868C8
@@ -61,21 +47,7 @@ F 3 "~" H 6950 1400 50  0001 C CNN
 	1    6950 1400
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+12V #PWR05
-U 1 1 606ED4D2
-P 1650 1350
-AR Path="/60528CB7/60408609/606ED4D2" Ref="#PWR05"  Part="1" 
-AR Path="/60529163/60408609/606ED4D2" Ref="#PWR?"  Part="1" 
-AR Path="/606ED4D2" Ref="#PWR0102"  Part="1" 
-F 0 "#PWR05" H 1650 1200 50  0001 C CNN
-F 1 "+12V" V 1650 1550 50  0000 C CNN
-F 2 "" H 1650 1350 50  0001 C CNN
-F 3 "" H 1650 1350 50  0001 C CNN
-	1    1650 1350
-	0    1    1    0   
-$EndComp
-Text HLabel 1300 1350 0    50   Input ~ 0
+Text HLabel 1300 1450 0    50   Input ~ 0
 12V
 Text HLabel 1300 1650 0    50   Input ~ 0
 0V
@@ -347,15 +319,15 @@ Wire Wire Line
 $Comp
 L power:+8V #PWR037
 U 1 1 631C85CD
-P 7300 4150
+P 10050 4100
 AR Path="/60528CB7/60408609/631C85CD" Ref="#PWR037"  Part="1" 
 AR Path="/60529163/60408609/631C85CD" Ref="#PWR?"  Part="1" 
 AR Path="/631C85CD" Ref="#PWR0106"  Part="1" 
-F 0 "#PWR037" H 7300 4000 50  0001 C CNN
-F 1 "+8V" H 7315 4323 50  0000 C CNN
-F 2 "" H 7300 4150 50  0001 C CNN
-F 3 "" H 7300 4150 50  0001 C CNN
-	1    7300 4150
+F 0 "#PWR037" H 10050 3950 50  0001 C CNN
+F 1 "+8V" H 10065 4273 50  0000 C CNN
+F 2 "" H 10050 4100 50  0001 C CNN
+F 3 "" H 10050 4100 50  0001 C CNN
+	1    10050 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -555,20 +527,6 @@ F 3 "" H 7300 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR04
-U 1 1 6163EF8F
-P 10050 1300
-AR Path="/60528CB7/60408609/6163EF8F" Ref="#PWR04"  Part="1" 
-AR Path="/60529163/60408609/6163EF8F" Ref="#PWR?"  Part="1" 
-AR Path="/6163EF8F" Ref="#PWR0112"  Part="1" 
-F 0 "#PWR04" H 10050 1150 50  0001 C CNN
-F 1 "+12V" H 10065 1473 50  0000 C CNN
-F 2 "" H 10050 1300 50  0001 C CNN
-F 3 "" H 10050 1300 50  0001 C CNN
-	1    10050 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP1 C2
 U 1 1 6163EF95
 P 9700 1400
@@ -597,10 +555,7 @@ F 3 "" H 9400 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10050 1300 10050 1400
-Wire Wire Line
 	9850 1400 10050 1400
-Connection ~ 10050 1400
 Wire Wire Line
 	10050 1400 10050 1550
 Wire Wire Line
@@ -1006,20 +961,6 @@ Text GLabel 5050 7400 2    39   Input ~ 0
 M8_DIR
 Text Notes 8750 3750 0    118  ~ 0
 M8 - FUSO DE ESFERAS
-$Comp
-L power:+12V #PWR036
-U 1 1 617D29F6
-P 10050 4100
-AR Path="/60528CB7/60408609/617D29F6" Ref="#PWR036"  Part="1" 
-AR Path="/60529163/60408609/617D29F6" Ref="#PWR?"  Part="1" 
-AR Path="/617D29F6" Ref="#PWR0120"  Part="1" 
-F 0 "#PWR036" H 10050 3950 50  0001 C CNN
-F 1 "+12V" H 10065 4273 50  0000 C CNN
-F 2 "" H 10050 4100 50  0001 C CNN
-F 3 "" H 10050 4100 50  0001 C CNN
-	1    10050 4100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector:Screw_Terminal_01x04 J17
 U 1 1 617D29FC
@@ -2223,25 +2164,11 @@ F 3 "" H 7300 5850 50  0001 C CNN
 	1    7300 5850
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+8V #PWR06
-U 1 1 61165F8E
-P 1650 1450
-AR Path="/60528CB7/60408609/61165F8E" Ref="#PWR06"  Part="1" 
-AR Path="/60529163/60408609/61165F8E" Ref="#PWR?"  Part="1" 
-AR Path="/61165F8E" Ref="#PWR0143"  Part="1" 
-F 0 "#PWR06" H 1650 1300 50  0001 C CNN
-F 1 "+8V" V 1650 1650 50  0000 C CNN
-F 2 "" H 1650 1450 50  0001 C CNN
-F 3 "" H 1650 1450 50  0001 C CNN
-	1    1650 1450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	1700 1650 1550 1650
 Wire Wire Line
 	1650 1450 1550 1450
-Text HLabel 1300 1450 0    50   Input ~ 0
+Text HLabel 1300 1350 0    50   Input ~ 0
 8V
 $Comp
 L Connector:Screw_Terminal_01x04 J5
@@ -2309,5 +2236,78 @@ F 2 "FalcaroLib:Connector_Screw_4pin" H 1350 1450 50  0001 C CNN
 F 3 "~" H 1350 1450 50  0001 C CNN
 	1    1350 1450
 	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 6179DCE1
+P 7300 4150
+AR Path="/60528CB7/60408609/6179DCE1" Ref="#PWR?"  Part="1" 
+AR Path="/60529163/60408609/6179DCE1" Ref="#PWR?"  Part="1" 
+AR Path="/6179DCE1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7300 4000 50  0001 C CNN
+F 1 "+12V" H 7315 4323 50  0000 C CNN
+F 2 "" H 7300 4150 50  0001 C CNN
+F 3 "" H 7300 4150 50  0001 C CNN
+	1    7300 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+8V #PWR?
+U 1 1 617D79D1
+P 10050 1300
+AR Path="/60528CB7/60408609/617D79D1" Ref="#PWR?"  Part="1" 
+AR Path="/60529163/60408609/617D79D1" Ref="#PWR?"  Part="1" 
+AR Path="/617D79D1" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10050 1150 50  0001 C CNN
+F 1 "+8V" H 10065 1473 50  0000 C CNN
+F 2 "" H 10050 1300 50  0001 C CNN
+F 3 "" H 10050 1300 50  0001 C CNN
+	1    10050 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 10050 1400
+Wire Wire Line
+	10050 1300 10050 1400
+$Comp
+L power:+8V #PWR?
+U 1 1 617F5FC2
+P 7300 1300
+AR Path="/60528CB7/60408609/617F5FC2" Ref="#PWR?"  Part="1" 
+AR Path="/60529163/60408609/617F5FC2" Ref="#PWR?"  Part="1" 
+AR Path="/617F5FC2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7300 1150 50  0001 C CNN
+F 1 "+8V" H 7315 1473 50  0000 C CNN
+F 2 "" H 7300 1300 50  0001 C CNN
+F 3 "" H 7300 1300 50  0001 C CNN
+	1    7300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+8V #PWR?
+U 1 1 618132E2
+P 1650 1350
+AR Path="/60528CB7/60408609/618132E2" Ref="#PWR?"  Part="1" 
+AR Path="/60529163/60408609/618132E2" Ref="#PWR?"  Part="1" 
+AR Path="/618132E2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1650 1200 50  0001 C CNN
+F 1 "+8V" V 1650 1550 50  0000 C CNN
+F 2 "" H 1650 1350 50  0001 C CNN
+F 3 "" H 1650 1350 50  0001 C CNN
+	1    1650 1350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 61813693
+P 1650 1450
+AR Path="/60528CB7/60408609/61813693" Ref="#PWR?"  Part="1" 
+AR Path="/60529163/60408609/61813693" Ref="#PWR?"  Part="1" 
+AR Path="/61813693" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1650 1300 50  0001 C CNN
+F 1 "+12V" V 1650 1650 50  0000 C CNN
+F 2 "" H 1650 1450 50  0001 C CNN
+F 3 "" H 1650 1450 50  0001 C CNN
+	1    1650 1450
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC

@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "Bancada de Testes Integrada com Braço Robótico"
-Date "2021-10-03"
-Rev "3.1"
+Date "2021-10-09"
+Rev "3.2"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
@@ -3240,8 +3240,8 @@ F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarSte
 	1    8450 2360
 	1    0    0    -1  
 $EndComp
-Text Notes 8300 2650 0    47   ~ 0
-17HS4401
+Text Notes 8280 2730 0    47   ~ 0
+17HS4401\n  4,7 Ω
 Wire Wire Line
 	7300 1860 8550 1860
 Wire Wire Line
@@ -3654,4 +3654,6 @@ Wire Wire Line
 	9339 4615 9139 4615
 Wire Wire Line
 	9339 4715 9139 4715
+NoConn ~ 8150 2360
+NoConn ~ 8450 2060
 $EndSCHEMATC
