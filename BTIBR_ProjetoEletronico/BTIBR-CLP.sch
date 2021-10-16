@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "Bancada de Testes Integrada com Braço Robótico"
-Date "2021-10-03"
-Rev "3.1"
+Date "2021-10-11"
+Rev "3.2"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
@@ -2871,9 +2871,9 @@ Wire Wire Line
 	5830 2920 5830 2630
 Text Notes 5110 1465 0    118  ~ 24
 Altus XP340
-Text HLabel 6850 5200 3    50   Output ~ 0
+Text HLabel 6850 5200 3    50   BiDi ~ 0
 RS485-A
-Text HLabel 6950 5200 3    50   Output ~ 0
+Text HLabel 6950 5200 3    50   BiDi ~ 0
 RS485-B
 Wire Wire Line
 	6850 4920 6850 5200

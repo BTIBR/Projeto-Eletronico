@@ -1,0 +1,316 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 9
+Title "Bancada de Testes Integrada com Braço Robótico"
+Date "2021-10-11"
+Rev "3.2"
+Comp "SENAI \"Roberto Mange\""
+Comment1 "Rubens Lima"
+Comment2 "Rafael Giaretta Falcaro"
+Comment3 "Lucas Melaré"
+Comment4 "Bruno Rafael Pires de Camargo"
+$EndDescr
+$Comp
+L FalcaroLib:Arduino_Socket_Nano U23
+U 1 1 6164E8C3
+P 7050 2750
+F 0 "U23" H 7050 1600 60  0000 C CNN
+F 1 "Arduino_Socket_Nano" H 7050 1500 60  0000 C CNN
+F 2 "FalcaroLib:Arduino_Socket_Nano" H 8850 6500 60  0001 C CNN
+F 3 "https://store.arduino.cc/arduino-nano" H 8850 6500 60  0001 C CNN
+	1    7050 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1950 4500 1950
+Wire Wire Line
+	4500 1950 4500 2750
+Wire Wire Line
+	4500 2750 4400 2750
+Wire Wire Line
+	8350 1850 8550 1850
+Wire Wire Line
+	8550 1850 8550 1600
+Wire Wire Line
+	8550 1600 4600 1600
+Wire Wire Line
+	4600 1600 4600 2850
+Wire Wire Line
+	4600 2950 4400 2950
+Wire Wire Line
+	4400 2850 4600 2850
+Connection ~ 4600 2850
+Wire Wire Line
+	4600 2850 4600 2950
+Wire Wire Line
+	5750 1850 4700 1850
+Wire Wire Line
+	4700 1850 4700 3050
+Wire Wire Line
+	4700 3050 4400 3050
+Text HLabel 5350 2750 0    50   Input ~ 0
+CC-SCK
+NoConn ~ 5750 2250
+NoConn ~ 5750 2350
+NoConn ~ 5750 2450
+NoConn ~ 5750 2550
+NoConn ~ 5750 2650
+NoConn ~ 5750 2950
+NoConn ~ 5750 3050
+NoConn ~ 5750 3450
+NoConn ~ 8350 3450
+NoConn ~ 8350 3550
+NoConn ~ 8350 2950
+NoConn ~ 8350 2850
+NoConn ~ 8350 2750
+NoConn ~ 8350 2050
+NoConn ~ 8350 1950
+NoConn ~ 8350 2450
+NoConn ~ 8350 2550
+NoConn ~ 8350 2650
+NoConn ~ 8350 2150
+NoConn ~ 8350 2250
+NoConn ~ 8350 2350
+Text Notes 5875 4700 0    79   ~ 0
+Regulação 8V (Motor 3)
+Text HLabel 4000 5050 0    50   Input ~ 0
+12V
+$Comp
+L FalcaroLib:Module_LM2596 U?
+U 1 1 6166A60D
+P 6600 5300
+AR Path="/60528CB7/60408609/6166A60D" Ref="U?"  Part="1" 
+AR Path="/60529163/60408609/6166A60D" Ref="U?"  Part="1" 
+AR Path="/6166A60D" Ref="U21"  Part="1" 
+AR Path="/60528CB7/60407996/6166A60D" Ref="U?"  Part="1" 
+AR Path="/60528CB7/615CE02A/6166A60D" Ref="U21"  Part="1" 
+F 0 "U21" H 6600 5669 47  0000 C CNN
+F 1 "Module_LM2596" H 6600 5582 47  0000 C CNN
+F 2 "FalcaroLib:Module_LM2596" H 6800 5550 118 0001 C CNN
+F 3 "" H 6800 5550 118 0001 C CNN
+	1    6600 5300
+	1    0    0    -1  
+$EndComp
+Text HLabel 4000 4950 0    50   Output ~ 0
+8V
+Text HLabel 4000 5150 0    50   Input ~ 0
+0V
+$Comp
+L Connector:Screw_Terminal_01x04 J25
+U 1 1 618D2382
+P 4050 5150
+F 0 "J25" H 3950 4800 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 4130 5051 50  0001 L CNN
+F 2 "FalcaroLib:Connector_Screw_4pin" H 4050 5150 50  0001 C CNN
+F 3 "~" H 4050 5150 50  0001 C CNN
+	1    4050 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 2750 5600 2750
+Wire Wire Line
+	5600 2850 5750 2850
+Text HLabel 4000 5250 0    50   Input ~ 0
+5V
+$Comp
+L power:+5V #PWR0101
+U 1 1 618ECCCE
+P 4450 5250
+F 0 "#PWR0101" H 4450 5100 50  0001 C CNN
+F 1 "+5V" V 4465 5378 50  0000 L CNN
+F 2 "" H 4450 5250 50  0001 C CNN
+F 3 "" H 4450 5250 50  0001 C CNN
+	1    4450 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+8V #PWR0102
+U 1 1 618ED468
+P 4450 4950
+F 0 "#PWR0102" H 4450 4800 50  0001 C CNN
+F 1 "+8V" V 4450 5150 50  0000 C CNN
+F 2 "" H 4450 4950 50  0001 C CNN
+F 3 "" H 4450 4950 50  0001 C CNN
+	1    4450 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+12V #PWR0103
+U 1 1 618EDB66
+P 4450 5050
+F 0 "#PWR0103" H 4450 4900 50  0001 C CNN
+F 1 "+12V" V 4450 5250 50  0000 C CNN
+F 2 "" H 4450 5050 50  0001 C CNN
+F 3 "" H 4450 5050 50  0001 C CNN
+	1    4450 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 618EDFAF
+P 4350 5300
+F 0 "#PWR0104" H 4350 5050 50  0001 C CNN
+F 1 "GND" H 4355 5127 50  0000 C CNN
+F 2 "" H 4350 5300 50  0001 C CNN
+F 3 "" H 4350 5300 50  0001 C CNN
+	1    4350 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 5300 4350 5150
+Wire Wire Line
+	4350 5150 4250 5150
+Wire Wire Line
+	4450 5250 4250 5250
+Wire Wire Line
+	4250 5050 4450 5050
+Wire Wire Line
+	4450 4950 4250 4950
+$Comp
+L power:GND #PWR0105
+U 1 1 618F9B5A
+P 6600 5600
+F 0 "#PWR0105" H 6600 5350 50  0001 C CNN
+F 1 "GND" H 6605 5427 50  0000 C CNN
+F 2 "" H 6600 5600 50  0001 C CNN
+F 3 "" H 6600 5600 50  0001 C CNN
+	1    6600 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 5600 6600 5550
+Wire Wire Line
+	6600 5550 6100 5550
+Wire Wire Line
+	6100 5550 6100 5400
+Wire Wire Line
+	6100 5400 6150 5400
+Wire Wire Line
+	7050 5400 7100 5400
+Wire Wire Line
+	7100 5400 7100 5550
+Wire Wire Line
+	7100 5550 6600 5550
+Connection ~ 6600 5550
+$Comp
+L power:+12V #PWR0106
+U 1 1 618FC442
+P 6100 5150
+F 0 "#PWR0106" H 6100 5000 50  0001 C CNN
+F 1 "+12V" V 6100 5350 50  0000 C CNN
+F 2 "" H 6100 5150 50  0001 C CNN
+F 3 "" H 6100 5150 50  0001 C CNN
+	1    6100 5150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6100 5150 6150 5150
+$Comp
+L power:+8V #PWR0107
+U 1 1 618FE3B8
+P 7100 5150
+F 0 "#PWR0107" H 7100 5000 50  0001 C CNN
+F 1 "+8V" V 7100 5350 50  0000 C CNN
+F 2 "" H 7100 5150 50  0001 C CNN
+F 3 "" H 7100 5150 50  0001 C CNN
+	1    7100 5150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 5150 7050 5150
+$Comp
+L power:+5V #PWR0109
+U 1 1 6190506E
+P 5650 3650
+F 0 "#PWR0109" H 5650 3500 50  0001 C CNN
+F 1 "+5V" V 5665 3778 50  0000 L CNN
+F 2 "" H 5650 3650 50  0001 C CNN
+F 3 "" H 5650 3650 50  0001 C CNN
+	1    5650 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5650 3650 5750 3650
+$Comp
+L power:GND #PWR0110
+U 1 1 61640F4F
+P 3350 2750
+F 0 "#PWR0110" H 3350 2500 50  0001 C CNN
+F 1 "GND" V 3350 2550 50  0000 C CNN
+F 2 "" H 3350 2750 50  0001 C CNN
+F 3 "" H 3350 2750 50  0001 C CNN
+	1    3350 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3350 2750 3400 2750
+NoConn ~ 5750 3550
+$Comp
+L power:+5V #PWR0111
+U 1 1 616484EA
+P 3350 3050
+F 0 "#PWR0111" H 3350 2900 50  0001 C CNN
+F 1 "+5V" V 3365 3178 50  0000 L CNN
+F 2 "" H 3350 3050 50  0001 C CNN
+F 3 "" H 3350 3050 50  0001 C CNN
+	1    3350 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 3050 3400 3050
+$Comp
+L FalcaroLib:Module_MAX485 U22
+U 1 1 6165F73B
+P 3900 2900
+F 0 "U22" H 3900 3317 50  0000 C CNN
+F 1 "Module_MAX485" H 3900 3226 50  0000 C CNN
+F 2 "FalcaroLib:Module_MAX485" H 3950 2450 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487-MAX491.pdf" H 4750 2500 50  0001 C CNN
+	1    3900 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2950 3300 2950
+Wire Wire Line
+	3300 2850 3400 2850
+Text HLabel 3300 2850 0    50   BiDi ~ 0
+RS485-A
+Text HLabel 3300 2950 0    50   BiDi ~ 0
+RS485-B
+$Comp
+L Connector:Screw_Terminal_01x02 J24
+U 1 1 618CE84F
+P 5400 2850
+F 0 "J24" H 5300 2600 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 5480 2751 50  0001 L CNN
+F 2 "FalcaroLib:Connector_Screw_2pin" H 5400 2850 50  0001 C CNN
+F 3 "~" H 5400 2850 50  0001 C CNN
+	1    5400 2850
+	-1   0    0    1   
+$EndComp
+Text HLabel 5350 2850 0    50   Input ~ 0
+CC-DT
+Wire Wire Line
+	5650 3250 5700 3250
+$Comp
+L power:GND #PWR0108
+U 1 1 61901A62
+P 5650 3250
+F 0 "#PWR0108" H 5650 3000 50  0001 C CNN
+F 1 "GND" V 5650 3050 50  0000 C CNN
+F 2 "" H 5650 3250 50  0001 C CNN
+F 3 "" H 5650 3250 50  0001 C CNN
+	1    5650 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5750 3350 5700 3350
+Wire Wire Line
+	5700 3350 5700 3250
+Connection ~ 5700 3250
+Wire Wire Line
+	5700 3250 5750 3250
+$EndSCHEMATC

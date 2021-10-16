@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 9
 Title "Bancada de Testes Integrada com Braço Robótico"
-Date "2021-10-03"
-Rev "3.1"
+Date "2021-10-11"
+Rev "3.2"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
@@ -35,10 +35,10 @@ Text Notes 2505 1235 0    98   ~ 0
 M1 - Base (Rz)
 Text Notes 5050 1235 0    98   ~ 0
 M2 - Ombro (Rx1)
-Text Notes 6250 2260 0    47   ~ 0
-KTC-HT23-400
-Text Notes 8800 2260 0    47   ~ 0
-SY42STH47-1206A
+Text Notes 6220 2300 0    47   ~ 0
+KTC-HT23-400\n     4,6 Ω
+Text Notes 8790 2300 0    47   ~ 0
+SY42STH47-1206A\n       6,2 Ω
 Wire Wire Line
 	6600 1460 6600 1660
 Wire Wire Line
@@ -74,8 +74,8 @@ F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarSte
 	1    3850 1960
 	1    0    0    -1  
 $EndComp
-Text Notes 3700 2260 0    47   ~ 0
-NEMA 17
+Text Notes 3690 2300 0    47   ~ 0
+NEMA 17\n  2,6 Ω
 Wire Wire Line
 	2700 1460 3950 1460
 Wire Wire Line
@@ -545,4 +545,8 @@ Wire Wire Line
 	8600 2550 8050 2550
 Wire Wire Line
 	8600 2450 8050 2450
+NoConn ~ 8850 1960
+NoConn ~ 9150 1660
+NoConn ~ 3550 1960
+NoConn ~ 3850 1660
 $EndSCHEMATC

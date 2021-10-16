@@ -5,25 +5,14 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 9
 Title "Bancada de Testes Integrada com Braço Robótico"
-Date "2021-10-03"
-Rev "3.1"
+Date "2021-10-11"
+Rev "3.2"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
 Comment3 "Lucas Melaré"
 Comment4 "Bruno Rafael Pires de Camargo"
 $EndDescr
-$Comp
-L power:VAC #PWR01
-U 1 1 6069F497
-P 3400 3450
-F 0 "#PWR01" H 3400 3350 50  0001 C CNN
-F 1 "VAC" V 3550 3550 50  0000 C CNN
-F 2 "" H 3400 3450 50  0001 C CNN
-F 3 "" H 3400 3450 50  0001 C CNN
-	1    3400 3450
-	0    -1   -1   0   
-$EndComp
 $Sheet
 S 6000 1150 1500 3100
 U 60529163
@@ -59,7 +48,7 @@ F28 "M6-SIN" I L 6000 3700 50
 F29 "M7-SIN" I L 6000 3800 50 
 $EndSheet
 Wire Wire Line
-	3400 3450 3600 3450
+	3450 2900 3600 2900
 Wire Wire Line
 	5100 2350 6000 2350
 Wire Wire Line
@@ -167,14 +156,12 @@ Wire Wire Line
 Wire Wire Line
 	5500 4850 5500 4150
 Connection ~ 5500 4150
-Wire Wire Line
-	5500 4150 5100 4150
 $Sheet
 S 3600 1150 1500 4900
 U 60528CB7
 F0 "BTIBR-Painel" 79
 F1 "BTIBR-Painel.sch" 50
-F2 "127-220VAC" I L 3600 3450 50 
+F2 "127-220VAC" I L 3600 2900 50 
 F3 "POT1-SIN" I R 5100 1250 50 
 F4 "POT2-SIN" I R 5100 1350 50 
 F5 "M1-A1" O R 5100 2250 50 
@@ -212,9 +199,44 @@ F36 "5V-FONTE-1" O R 5100 4050 50
 F37 "0V-FONTE-1" O R 5100 4150 50 
 F38 "CC-DT" O R 5100 5100 50 
 F39 "CC-SCK" O R 5100 5000 50 
+F40 "12V-FONTE-1" O L 3600 3550 50 
 $EndSheet
 Wire Wire Line
 	5100 5000 6000 5000
 Wire Wire Line
 	5100 5100 6000 5100
+$Comp
+L Motor:Motor_DC M9
+U 1 1 6161E45B
+P 3300 3800
+F 0 "M9" H 3000 3800 50  0000 L CNN
+F 1 "Exaustor" H 2800 3700 50  0000 L CNN
+F 2 "" H 3300 3710 50  0001 C CNN
+F 3 "~" H 3300 3710 50  0001 C CNN
+	1    3300 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3550 3300 3550
+Wire Wire Line
+	3300 3550 3300 3600
+Wire Wire Line
+	3300 4150 3300 4100
+Text HLabel 3600 4150 2    50   Output ~ 0
+0V-FONTE-1
+Wire Wire Line
+	5100 4150 5500 4150
+Wire Wire Line
+	3300 4150 3600 4150
+$Comp
+L power:VAC #PWR01
+U 1 1 6069F497
+P 3450 2900
+F 0 "#PWR01" H 3450 2800 50  0001 C CNN
+F 1 "VAC" V 3600 3016 50  0000 C CNN
+F 2 "" H 3450 2900 50  0001 C CNN
+F 3 "" H 3450 2900 50  0001 C CNN
+	1    3450 2900
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
