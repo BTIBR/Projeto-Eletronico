@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 9
 Title "Bancada de Testes Integrada com Braço Robótico"
-Date "2021-10-11"
-Rev "3.2"
+Date "2021-11-14"
+Rev "3.3"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
@@ -2698,185 +2698,225 @@ AB 05 FE B0 11 11 11 FD 9E FA 13 44 49 74 76 76 1E D0 E3 07 02 A2 B6 32 99 CC FE
 08 54 00 00 00 00 49 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text HLabel 4430 5200 3    50   Output ~ 0
+Text HLabel 4430 5400 3    50   Output ~ 0
 M1-DIR
-Text HLabel 4340 5200 3    50   Output ~ 0
+Text HLabel 4340 5400 3    50   Output ~ 0
 M1-STP
-Text HLabel 4250 5200 3    50   Output ~ 0
+Text HLabel 4250 5400 3    50   Output ~ 0
 M1-ENA
-Text HLabel 5450 5200 3    50   Output ~ 0
+Text HLabel 5450 5400 3    50   Output ~ 0
 M3-DIR
-Text HLabel 5350 5200 3    50   Output ~ 0
+Text HLabel 5350 5400 3    50   Output ~ 0
 M3-STP
-Text HLabel 5260 5200 3    50   Output ~ 0
+Text HLabel 5260 5400 3    50   Output ~ 0
 M3-ENA
-Text HLabel 5160 5200 3    50   Output ~ 0
+Text HLabel 5160 5400 3    50   Output ~ 0
 M2-DIR
-Text HLabel 4630 5200 3    50   Output ~ 0
+Text HLabel 4630 5400 3    50   Output ~ 0
 M2-STP
-Text HLabel 4530 5200 3    50   Output ~ 0
+Text HLabel 4530 5400 3    50   Output ~ 0
 M2-ENA
-Text HLabel 5730 5200 3    50   Output ~ 0
+Text HLabel 5730 5400 3    50   Output ~ 0
 M8-DIR
-Text HLabel 5640 5200 3    50   Output ~ 0
+Text HLabel 5640 5400 3    50   Output ~ 0
 M8-STP
-Text HLabel 5540 5200 3    50   Output ~ 0
+Text HLabel 5540 5400 3    50   Output ~ 0
 M8-ENA
-Text HLabel 6020 5200 3    50   Output ~ 0
+Text HLabel 6020 5400 3    50   Output ~ 0
 M6-PWM
-Text HLabel 5930 5200 3    50   Output ~ 0
+Text HLabel 5930 5400 3    50   Output ~ 0
 M5-PWM
-Text HLabel 5830 5200 3    50   Output ~ 0
+Text HLabel 5830 5400 3    50   Output ~ 0
 M4-PWM
 Wire Wire Line
-	6020 4920 6020 5200
+	6020 4920 6020 5400
 Wire Wire Line
-	5930 4920 5930 5200
+	5930 4920 5930 5400
 Wire Wire Line
-	5830 4920 5830 5200
+	5830 4920 5830 5400
 Wire Wire Line
-	5730 4920 5730 5200
+	5730 4920 5730 5400
 Wire Wire Line
-	5640 4920 5640 5200
+	5640 4920 5640 5400
 Wire Wire Line
-	5540 4920 5540 5200
+	5540 4920 5540 5400
 Wire Wire Line
-	5450 4920 5450 5200
+	5450 4920 5450 5400
 Wire Wire Line
-	5350 4920 5350 5200
+	5350 4920 5350 5400
 Wire Wire Line
-	5260 4920 5260 5200
+	5260 4920 5260 5400
 Wire Wire Line
-	4630 4920 4630 5200
+	4630 4920 4630 5400
 Wire Wire Line
-	4530 4920 4530 5200
+	4530 4920 4530 5400
 Wire Wire Line
-	4430 4920 4430 5200
+	4430 4920 4430 5400
 Wire Wire Line
-	4340 4920 4340 5200
+	4340 4920 4340 5400
 Wire Wire Line
-	4250 4920 4250 5200
+	4250 4920 4250 5400
 Wire Wire Line
-	4150 4920 4150 5200
+	4150 4920 4150 5400
 Wire Wire Line
-	5160 4920 5160 5200
-Text HLabel 6400 5200 3    50   Input ~ 0
+	5160 4920 5160 5400
+Text HLabel 6400 5400 3    50   Input ~ 0
 PE
-Text HLabel 6210 5300 3    50   Input ~ 0
+Text HLabel 6210 5500 3    50   Input ~ 0
 24V
 Wire Wire Line
-	6400 4920 6400 5200
+	6400 4920 6400 5400
 Wire Wire Line
-	6210 4920 6210 5180
+	6210 4920 6210 5380
 Wire Wire Line
-	6310 5180 6210 5180
+	6310 5380 6210 5380
 Wire Wire Line
-	6310 4920 6310 5180
-Connection ~ 6210 5180
+	6310 4920 6310 5380
+Connection ~ 6210 5380
 Wire Wire Line
-	6210 5180 6210 5300
-Text HLabel 3380 2640 1    50   Input ~ 0
+	6210 5380 6210 5500
+Text HLabel 3380 2440 1    50   Input ~ 0
 PE
 Wire Wire Line
-	3380 2920 3380 2640
+	3380 2920 3380 2440
 Wire Wire Line
-	3580 2920 3580 2630
+	3580 2920 3580 2430
 Wire Wire Line
-	3480 2920 3480 2630
-Text HLabel 3580 2630 1    50   Input ~ 0
+	3480 2920 3480 2430
+Text HLabel 3580 2430 1    50   Input ~ 0
 24V
-Text HLabel 3480 2630 1    50   Input ~ 0
+Text HLabel 3480 2430 1    50   Input ~ 0
 0V
-Text HLabel 4150 5200 3    50   Input ~ 0
+Text HLabel 4150 5400 3    50   Input ~ 0
 0V
-Text HLabel 4240 2630 1    50   Input ~ 0
-0V
-Wire Wire Line
-	4240 2920 4240 2630
-Text HLabel 4530 2630 1    50   Input ~ 0
+Text HLabel 4240 2430 1    50   Input ~ 0
 0V
 Wire Wire Line
-	4530 2920 4530 2630
-Text HLabel 5250 2630 1    50   Input ~ 0
+	4240 2920 4240 2430
+Text HLabel 4530 2430 1    50   Input ~ 0
 0V
 Wire Wire Line
-	5250 2920 5250 2630
-Text HLabel 5540 2630 1    50   Input ~ 0
+	4530 2920 4530 2430
+Text HLabel 5250 2430 1    50   Input ~ 0
 0V
 Wire Wire Line
-	5540 2920 5540 2630
-Text HLabel 5160 2630 1    50   Input ~ 0
+	5250 2920 5250 2430
+Text HLabel 5540 2430 1    50   Input ~ 0
+0V
+Wire Wire Line
+	5540 2920 5540 2430
+Text HLabel 5160 2430 1    50   Input ~ 0
 POT1-SIN
-Text HLabel 5440 2630 1    50   Input ~ 0
+Text HLabel 5440 2430 1    50   Input ~ 0
 POT2-SIN
-Text HLabel 5730 2630 1    50   Input ~ 0
+Text HLabel 5730 2430 1    50   Input ~ 0
 POT3-SIN
-Wire Wire Line
-	5160 2920 5160 2630
-Wire Wire Line
-	5440 2920 5440 2630
-Wire Wire Line
-	5730 2920 5730 2630
-Text HLabel 6400 2630 1    50   Input ~ 0
+Text HLabel 6400 2430 1    50   Input ~ 0
 M2-FDC+
-Text HLabel 6310 2630 1    50   Input ~ 0
+Text HLabel 6310 2430 1    50   Input ~ 0
 M1-FDC-
-Text HLabel 6210 2630 1    50   Input ~ 0
+Text HLabel 6210 2430 1    50   Input ~ 0
 M1-FDC+
-Text HLabel 6930 2630 1    50   Input ~ 0
+Text HLabel 6930 2430 1    50   Input ~ 0
 M2-FDC-
-Text HLabel 7130 2630 1    50   Input ~ 0
+Text HLabel 7130 2430 1    50   Input ~ 0
 M3-FDC-
-Text HLabel 7030 2630 1    50   Input ~ 0
+Text HLabel 7030 2430 1    50   Input ~ 0
 M3-FDC+
-Text HLabel 7320 2630 1    50   Input ~ 0
+Text HLabel 7320 2430 1    50   Input ~ 0
 M8-FDC-
-Text HLabel 7220 2630 1    50   Input ~ 0
+Text HLabel 7220 2430 1    50   Input ~ 0
 M8-FDC+
 Wire Wire Line
-	6210 2920 6210 2630
+	6210 2920 6210 2430
 Wire Wire Line
-	6400 2920 6400 2630
+	6400 2920 6400 2430
 Wire Wire Line
-	6310 2920 6310 2630
+	6310 2920 6310 2430
 Wire Wire Line
-	6930 2920 6930 2630
+	6930 2920 6930 2430
 Wire Wire Line
-	7130 2920 7130 2630
+	7130 2920 7130 2430
 Wire Wire Line
-	7030 2920 7030 2630
+	7030 2920 7030 2430
 Wire Wire Line
-	7320 2920 7320 2630
+	7320 2920 7320 2430
 Wire Wire Line
-	7220 2920 7220 2630
-Text HLabel 6110 2630 1    50   Input ~ 0
+	7220 2920 7220 2430
+Text HLabel 6110 2430 1    50   Input ~ 0
 0V
 Wire Wire Line
-	6110 2920 6110 2630
-Text HLabel 7410 2630 1    50   Input ~ 0
+	6110 2920 6110 2430
+Text HLabel 7410 2430 1    50   Input ~ 0
 0V
 Wire Wire Line
-	7410 2920 7410 2630
+	7410 2920 7410 2430
 Wire Bus Line
 	8140 5060 8140 5320
 Text HLabel 8140 5320 3    50   BiDi ~ 0
 ETH-CLP
-Text HLabel 6120 5200 3    50   Output ~ 0
+Text HLabel 6120 5400 3    50   Output ~ 0
 M7-PWM
 Wire Wire Line
-	6120 4920 6120 5200
-Text HLabel 5830 2630 1    50   Input ~ 0
+	6120 4920 6120 5400
+Text HLabel 5830 2430 1    50   Input ~ 0
 0V
 Wire Wire Line
-	5830 2920 5830 2630
+	5830 2920 5830 2430
 Text Notes 5110 1465 0    118  ~ 24
 Altus XP340
-Text HLabel 6850 5200 3    50   BiDi ~ 0
+Text HLabel 6850 5400 3    50   BiDi ~ 0
 RS485-A
-Text HLabel 6950 5200 3    50   BiDi ~ 0
+Text HLabel 6950 5400 3    50   BiDi ~ 0
 RS485-B
 Wire Wire Line
-	6850 4920 6850 5200
+	6850 4920 6850 5400
 Wire Wire Line
-	6950 4920 6950 5200
+	6950 4920 6950 5400
+Text Label 5160 2731 1    50   ~ 0
+AM
+Wire Wire Line
+	7595 2640 7595 2653
+Text Label 5440 2731 1    50   ~ 0
+AM
+Text Label 5730 2731 1    50   ~ 0
+AM
+Wire Wire Line
+	5730 2920 5730 2430
+Wire Wire Line
+	5440 2920 5440 2430
+Wire Wire Line
+	5160 2920 5160 2430
+Wire Wire Line
+	3383 4920 3383 5400
+Text HLabel 3383 5400 3    50   Input ~ 0
+0V
+Wire Wire Line
+	3575 4920 3575 5400
+Text HLabel 3575 5400 3    50   Input ~ 0
+0V
+Wire Wire Line
+	3766 4920 3766 5400
+Text HLabel 3766 5400 3    50   Input ~ 0
+0V
+Wire Wire Line
+	3957 4920 3957 5400
+Text HLabel 3957 5400 3    50   Input ~ 0
+0V
+Text HLabel 3479 5399 3    50   Output ~ 0
+CLP-AO0
+Wire Wire Line
+	3479 4919 3479 5399
+Text HLabel 3670 5399 3    50   Output ~ 0
+CLP-AO1
+Wire Wire Line
+	3670 4919 3670 5399
+Text HLabel 3862 5399 3    50   Output ~ 0
+CLP-AO2
+Wire Wire Line
+	3862 4919 3862 5399
+Text HLabel 4053 5399 3    50   Output ~ 0
+CLP-AO3
+Wire Wire Line
+	4053 4919 4053 5399
 $EndSCHEMATC

@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "Bancada de Testes Integrada com Braço Robótico"
-Date "2021-10-11"
-Rev "3.2"
+Date "2021-11-14"
+Rev "3.3"
 Comp "SENAI \"Roberto Mange\""
 Comment1 "Rubens Lima"
 Comment2 "Rafael Giaretta Falcaro"
@@ -3213,73 +3213,71 @@ E3 E4 E7 D2 9E 42 9C A1 6D 94 54 7C EB 90 B2 49 0D 33 09 A7 3D 80 9D E9 95 D0 93
 45 4E 44 AE 42 60 82 
 EndData
 $EndBitmap
-Text Notes 7005 1635 0    98   ~ 0
+Text Notes 7255 1085 0    98   ~ 0
 M8 - Fuso de Esferas
-Text Label 7750 1860 0    50   ~ 0
+Text Label 8000 1310 0    50   ~ 0
 RED
-Text Label 7750 2010 0    50   ~ 0
+Text Label 8000 1460 0    50   ~ 0
 YEL
-Text Label 7750 2460 0    50   ~ 0
+Text Label 8000 1910 0    50   ~ 0
 BRN
-Text Label 7750 2260 0    50   ~ 0
+Text Label 8000 1710 0    50   ~ 0
 OGE
 $Comp
 L Motor:Stepper_Motor_unipolar_6pin M?
 U 1 1 611CEA28
-P 8450 2360
+P 8700 1810
 AR Path="/60444F3A/611CEA28" Ref="M?"  Part="1" 
 AR Path="/6045294F/611CEA28" Ref="M?"  Part="1" 
 AR Path="/604093FB/611CEA28" Ref="M?"  Part="1" 
 AR Path="/60529163/611CEA28" Ref="M?"  Part="1" 
 AR Path="/611CEA28" Ref="M?"  Part="1" 
 AR Path="/611C6A73/611CEA28" Ref="M8"  Part="1" 
-F 0 "M8" H 8638 2438 50  0000 L CNN
-F 1 "Stepper_Motor_unipolar_6pin" H 8638 2393 50  0001 L CNN
-F 2 "" H 8460 2350 50  0001 C CNN
-F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0" H 8460 2350 50  0001 C CNN
-	1    8450 2360
+F 0 "M8" H 8888 1888 50  0000 L CNN
+F 1 "Stepper_Motor_unipolar_6pin" H 8888 1843 50  0001 L CNN
+F 2 "" H 8710 1800 50  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Application-Note-TLE8110EE_driving_UniPolarStepperMotor_V1.1.pdf?fileId=db3a30431be39b97011be5d0aa0a00b0" H 8710 1800 50  0001 C CNN
+	1    8700 1810
 	1    0    0    -1  
 $EndComp
-Text Notes 8280 2730 0    47   ~ 0
+Text Notes 8530 2180 0    47   ~ 0
 17HS4401\n  4,7 Ω
 Wire Wire Line
-	7300 1860 8550 1860
+	7550 1310 8800 1310
 Wire Wire Line
-	8550 1860 8550 2060
+	8800 1310 8800 1510
 Wire Wire Line
-	7400 2010 8350 2010
+	7650 1460 8600 1460
 Wire Wire Line
-	8350 2010 8350 2060
+	8600 1460 8600 1510
 Wire Wire Line
-	7500 2260 8150 2260
+	7750 1710 8400 1710
 Wire Wire Line
-	7050 2160 7400 2160
+	7300 1610 7650 1610
 Wire Wire Line
-	7400 2160 7400 2010
+	7650 1610 7650 1460
 Wire Wire Line
-	7300 1860 7300 2260
+	7550 1310 7550 1710
 Wire Wire Line
-	7300 2260 7050 2260
+	7550 1710 7300 1710
 Wire Wire Line
-	7500 2260 7500 2360
+	7750 1710 7750 1810
 Wire Wire Line
-	7500 2360 7050 2360
+	7750 1810 7300 1810
 Wire Wire Line
-	7050 2460 8150 2460
-Text HLabel 7050 2160 0    50   Input ~ 0
+	7300 1910 8400 1910
+Text HLabel 7300 1610 0    50   Input ~ 0
 M8-A1
-Text HLabel 7050 2260 0    50   Input ~ 0
+Text HLabel 7300 1710 0    50   Input ~ 0
 M8-A2
-Text HLabel 7050 2360 0    50   Input ~ 0
+Text HLabel 7300 1810 0    50   Input ~ 0
 M8-B1
-Text HLabel 7050 2460 0    50   Input ~ 0
+Text HLabel 7300 1910 0    50   Input ~ 0
 M8-B2
 Text HLabel 3700 2400 2    50   Output ~ 0
 M8-FDC-
 Text HLabel 3700 1950 2    50   Output ~ 0
 M8-FDC+
-Wire Wire Line
-	2900 2500 2900 2050
 $Comp
 L Switch:SW_DPDT_x2 SW?
 U 1 1 611CEA42
@@ -3318,44 +3316,37 @@ F 3 "~" H 3250 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3450 2400 3700 2400
-Wire Wire Line
-	3050 2050 2900 2050
-Connection ~ 2900 2050
-Wire Wire Line
-	3050 2500 2900 2500
 Text Notes 2780 1550 0    79   ~ 0
 Chaves fim de curso
 Text HLabel 2700 2050 0    50   Input ~ 0
 24V
-Wire Wire Line
-	2700 2050 2900 2050
 Text Notes 3030 3900 0    98   ~ 20
 IHM ABB CP630
 Wire Bus Line
-	2590 5240 1780 5240
-Text HLabel 1780 5240 0    50   BiDi ~ 0
+	2590 4890 1780 4890
+Text HLabel 1780 4890 0    50   BiDi ~ 0
 ETH-IHM
-Text HLabel 9339 4515 2    50   Input ~ 0
+Text HLabel 9639 3315 2    50   Input ~ 0
 5V
 Wire Wire Line
-	9339 4515 9139 4515
-Text HLabel 9339 4815 2    50   Input ~ 0
+	9639 3315 9439 3315
+Text HLabel 9639 3615 2    50   Input ~ 0
 0V
 Wire Wire Line
-	9339 4815 9139 4815
+	9639 3615 9439 3615
 $Comp
 L FalcaroLib:Module_HX711 U22
 U 1 1 613AC44A
-P 8639 4665
-F 0 "U22" H 8639 5182 50  0000 C CNN
-F 1 "Module_HX711" H 8639 5091 50  0000 C CNN
-F 2 "FalcaroLib:Module_HX711" H 8689 4215 50  0001 C CNN
-F 3 "https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf" H 9489 4265 50  0001 C CNN
-	1    8639 4665
+P 8939 3465
+F 0 "U22" H 8939 3982 50  0000 C CNN
+F 1 "Module_HX711" H 8939 3891 50  0000 C CNN
+F 2 "FalcaroLib:Module_HX711" H 8989 3015 50  0001 C CNN
+F 3 "https://cdn.sparkfun.com/datasheets/Sensors/ForceFlex/hx711_english.pdf" H 9789 3065 50  0001 C CNN
+	1    8939 3465
 	1    0    0    -1  
 $EndComp
 $Bitmap
-Pos 6800 4500
+Pos 7100 3300
 Scale 1.500000
 Data
 89 50 4E 47 0D 0A 1A 0A 00 00 00 0D 49 48 44 52 00 00 01 92 00 00 00 42 08 02 00 00 00 F2 A9 C7 
@@ -3625,35 +3616,179 @@ CC 89 BE 0E 00 00 00 00 49 45 4E 44 AE 42 60 82
 EndData
 $EndBitmap
 Wire Wire Line
-	7795 4475 8042 4475
+	8095 3275 8342 3275
 Wire Wire Line
-	8042 4475 8042 4515
+	8342 3275 8342 3315
 Wire Wire Line
-	7794 4532 7983 4532
+	8094 3332 8283 3332
 Wire Wire Line
-	7795 4598 7925 4598
+	8095 3398 8225 3398
 Wire Wire Line
-	7925 4598 7925 4715
+	8225 3398 8225 3515
 Wire Wire Line
-	7794 4415 8139 4415
+	8094 3215 8439 3215
 Wire Wire Line
-	8139 4515 8042 4515
+	8439 3315 8342 3315
 Wire Wire Line
-	8139 4615 7983 4615
+	8439 3415 8283 3415
 Wire Wire Line
-	7983 4532 7983 4615
+	8283 3332 8283 3415
 Wire Wire Line
-	8139 4715 7925 4715
-Text HLabel 9339 4615 2    50   Output ~ 0
+	8439 3515 8225 3515
+Text HLabel 9639 3415 2    50   Output ~ 0
 CC-DT
-NoConn ~ 8139 4815
-NoConn ~ 8139 4915
-Text HLabel 9339 4715 2    50   Output ~ 0
+NoConn ~ 8439 3615
+NoConn ~ 8439 3715
+Text HLabel 9639 3515 2    50   Output ~ 0
 CC-SCK
 Wire Wire Line
-	9339 4615 9139 4615
+	9639 3415 9439 3415
 Wire Wire Line
-	9339 4715 9139 4715
-NoConn ~ 8150 2360
-NoConn ~ 8450 2060
+	9639 3515 9439 3515
+NoConn ~ 8400 1810
+NoConn ~ 8700 1510
+$Comp
+L power:Earth #PWR?
+U 1 1 619E8374
+P 2200 6050
+F 0 "#PWR?" H 2200 5800 50  0001 C CNN
+F 1 "Earth" H 2200 5900 50  0001 C CNN
+F 2 "" H 2200 6050 50  0001 C CNN
+F 3 "~" H 2200 6050 50  0001 C CNN
+	1    2200 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 619E9228
+P 2000 6050
+F 0 "#PWR?" H 2000 5800 50  0001 C CNN
+F 1 "GND" H 2005 5877 50  0000 C CNN
+F 2 "" H 2000 6050 50  0001 C CNN
+F 3 "" H 2000 6050 50  0001 C CNN
+	1    2000 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+24V #PWR?
+U 1 1 619E9669
+P 1800 6050
+F 0 "#PWR?" H 1800 5900 50  0001 C CNN
+F 1 "+24V" H 1815 6223 50  0000 C CNN
+F 2 "" H 1800 6050 50  0001 C CNN
+F 3 "" H 1800 6050 50  0001 C CNN
+	1    1800 6050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 6050 2200 5800
+Wire Wire Line
+	2200 5800 2550 5800
+Wire Wire Line
+	2000 6050 2000 5750
+Wire Wire Line
+	2000 5750 2550 5750
+Wire Wire Line
+	1800 6050 1800 5700
+Wire Wire Line
+	1800 5700 2550 5700
+Text Label 1800 5950 0    50   ~ 0
+VM
+Text Label 2000 5950 0    50   ~ 0
+BR
+Text Label 2200 5950 0    50   ~ 0
+AM
+Wire Wire Line
+	2700 2050 3050 2050
+Text HLabel 2700 2500 0    50   Input ~ 0
+24V
+Wire Wire Line
+	2700 2500 3050 2500
+NoConn ~ 3450 2600
+NoConn ~ 3450 2150
+$Comp
+L Device:LED D1
+U 1 1 619FF063
+P 8000 4950
+F 0 "D1" H 7993 5167 50  0000 C CNN
+F 1 "LED Vermelho" H 7993 5076 50  0000 C CNN
+F 2 "" H 8000 4950 50  0001 C CNN
+F 3 "~" H 8000 4950 50  0001 C CNN
+	1    8000 4950
+	1    0    0    -1  
+$EndComp
+Text Notes 7205 2785 0    98   ~ 0
+Célula de Carga e Amplificador
+Text Notes 7455 4535 0    98   ~ 0
+Poste Luminoso
+Text HLabel 7200 4950 0    50   Input ~ 0
+0V
+$Comp
+L Device:LED D2
+U 1 1 61A06B88
+P 8000 5300
+F 0 "D2" H 7993 5517 50  0000 C CNN
+F 1 "LED Azul" H 7993 5426 50  0000 C CNN
+F 2 "" H 8000 5300 50  0001 C CNN
+F 3 "~" H 8000 5300 50  0001 C CNN
+	1    8000 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 61A07650
+P 8000 5650
+F 0 "D3" H 7993 5867 50  0000 C CNN
+F 1 "LED Laranja" H 7993 5776 50  0000 C CNN
+F 2 "" H 8000 5650 50  0001 C CNN
+F 3 "~" H 8000 5650 50  0001 C CNN
+	1    8000 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 61A07F16
+P 8000 6000
+F 0 "D4" H 7993 6217 50  0000 C CNN
+F 1 "LED Verde" H 7993 6126 50  0000 C CNN
+F 2 "" H 8000 6000 50  0001 C CNN
+F 3 "~" H 8000 6000 50  0001 C CNN
+	1    8000 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 6000 7500 6000
+Wire Wire Line
+	7500 6000 7500 5650
+Wire Wire Line
+	7500 4950 7850 4950
+Wire Wire Line
+	7850 5300 7500 5300
+Connection ~ 7500 5300
+Wire Wire Line
+	7500 5300 7500 4950
+Wire Wire Line
+	7850 5650 7500 5650
+Connection ~ 7500 5650
+Wire Wire Line
+	7500 5650 7500 5300
+Wire Wire Line
+	7500 4950 7200 4950
+Connection ~ 7500 4950
+Wire Wire Line
+	8150 4950 8500 4950
+Wire Wire Line
+	8500 6000 8150 6000
+Wire Wire Line
+	8150 5650 8500 5650
+Wire Wire Line
+	8150 5300 8500 5300
+Text HLabel 8500 6000 2    50   Input ~ 0
+LED-VD
+Text HLabel 8500 5650 2    50   Input ~ 0
+LED-LR
+Text HLabel 8500 5300 2    50   Input ~ 0
+LED-AZ
+Text HLabel 8500 4950 2    50   Input ~ 0
+LED-VM
 $EndSCHEMATC
