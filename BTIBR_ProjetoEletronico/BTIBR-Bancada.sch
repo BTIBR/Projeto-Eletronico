@@ -3791,4 +3791,12 @@ Text HLabel 8500 5300 2    50   Input ~ 0
 LED-AZ
 Text HLabel 8500 4950 2    50   Input ~ 0
 LED-VM
+Text Label 8200 3200 0    50   ~ 0
+AZ
+Text Label 8350 3300 0    50   ~ 0
+VD
+Text Label 8350 3400 0    50   ~ 0
+AM
+Text Label 8300 3500 0    50   ~ 0
+RX
 $EndSCHEMATC
